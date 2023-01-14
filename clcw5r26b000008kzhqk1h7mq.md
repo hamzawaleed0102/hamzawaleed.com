@@ -36,4 +36,14 @@ It's worth mentioning that while there are a few other anonymous bots available 
 
 In addition to this, I am also excited to announce that I am planning to release a paid version of this app in the coming weeks, which will include additional features and functionalities.
 
-I am confident that this bot will be a valuable tool for teams everywhere, and I look forward to continuing to develop and improve it in the future. Thank you for your support and stay tuned for more exciting SaaS projects from me in the future.
+I am confident that this bot will be a valuable tool for teams everywhere, and I look forward to continuing to develop and improve it in the future.
+
+## Try yourself!
+
+If you're interested in installing the Anonymity Slack Bot in your workspace, you can easily do so by visiting [**Anonymity**](https://anonymity.webflow.io/). On this website, you'll find an **Add to Slack** button to integrate it into your Slack workspace.
+
+Once installed, you'll be able to start using the bot right away and experience the benefits of anonymous communication and collaboration within your team.
+
+To start using the bot, you can run `/anony` command in any slack channel. The bot must be invited to private channels to work.
+
+Thank you for your support and stay tuned for more exciting SaaS projects from me in the future.
