@@ -1,4 +1,4 @@
-# Master the Art of React Hooks: Top 4 Hooks for Beginners
+# Master the Art of React Hooks: Top 5 Hooks for Beginners
 
 React Hooks are a powerful new feature in React that allows developers to write functional components with state and lifecycle methods. They were introduced in React 16.8 and have since become the recommended way to write components in React. In this blog post, we will discuss the top 5 React Hooks tips for beginners, including code snippets to help you get started.
 
