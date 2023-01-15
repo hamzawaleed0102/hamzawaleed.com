@@ -27,6 +27,8 @@ I'm a software engineer specializing in mobile and web app development. I'm neve
 * Used technologies: JavaScript, React Native, React, Node.js, Express.js, Firebase, E2E Testing, Jest, Next.js
     
 
+---
+
 **Software Engineer**
 
 *Crewlogix Technologies - 2018 - 2021*
@@ -44,32 +46,42 @@ I'm a software engineer specializing in mobile and web app development. I'm neve
 * Progressed to **senior software engineer** and managed a team of recent graduates.
     
 
----
-
 ## Projects
 
-**1\.** [**Jobcase**](https://www.jobcase.com/about-us/)
+**1.** [**Jobcase**](https://www.jobcase.com/about-us/)
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1673771641134/a929f044-fae1-4e2e-b7cf-cc069310c0fb.png align="center")
 
 Jobcase is a leading platform for blue-collar workers in the US, and I've been involved in developing their React Native-based app.
 
-Taking part in the team as a senior software engineer, I've designed and shipped new features while maintaining the existing codebase. I also led a group of seven engineers to ensure we would get the expected results and not just meet the timeline but exceed the client's expectations in each sprint.
+Taking part in the team as a senior software engineer, I've **designed** and **shipped** multiple new features while **maintaining** the existing codebase. I also **led** a group of seven engineers to ensure we would get the expected results and not just meet the timeline but exceed the **client's** expectations in each sprint.
 
 My technical achievements on this project include:
 
-• Performed multiple code audit activities to identify the bottlenecks and inefficient coding patterns that can be improved  
-• Upgraded the React Native version from 0.64 to 0.68, thus fixing several breaking changes  
-• Improved the app performance by implementing memoization techniques  
-• Added a feature that allows app users to connect  
-• Mentored a team of junior developers on implementing a full-fledge chat feature, which increased app engagement significantly  
-• Integrated **Detox** testing tool for end-to-end testing of the app over GitLab pipelines using a custom runner, which assures that our `develop` branch is always stable and ready to release
+* **Performed** multiple code audit activities to **identify** the bottlenecks and inefficient coding patterns that can be improved
+    
+* **Upgraded** the React Native version from 0.64 to 0.68, thus fixing several breaking changes
+    
+* **Improved** the app performance by implementing memoization techniques
+    
+* **Added** a feature that allows app users to connect
+    
+* **Mentored** a team of junior developers on implementing a full-fledge chat feature, which increased app engagement significantly
+    
+* **Integrated** Detox testing tool for end-to-end testing of the app over GitLab pipelines using a custom runner, which assures that our `develop` branch is always stable and ready to release
+    
 
-**2\.** [**The Bitcoin Company**](https://thebitcoincompany.com/)
+---
+
+**2.** [**The Bitcoin Company**](https://thebitcoincompany.com/)
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1673770874075/079563d1-b86b-4495-a0f6-e7fdefa4aa05.png align="center")
 
 The Bitcoin Company allows users to earn Bitcoins back on every purchase and help them learn, earn, spend, save, borrow, and buy Bitcoin, all in one place. We've built a simple, private, and easy-to-use app with all the traditional financial tools expected in a bank but with Bitcoin at its core.
 
 I got this freelance project from my previous client, [Sifir.io](http://Sifir.io), which is also a Bitcoin wallet but with different features. I joined the team in the initial phases, worked on converting mockups to responsive design using code, and integrated some APIs like auth and transaction verification. I also configured the project for the Detox end-to-end testing tool and wrote test cases for every edge case so that we could confidently release it to the public. It was in the beta version when I last worked on it.
+
+---
 
 3\. [Sifir.io](http://Sifir.io)
 
