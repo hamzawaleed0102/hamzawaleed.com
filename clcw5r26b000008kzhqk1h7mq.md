@@ -22,11 +22,11 @@ When the majority of readers downvote a message, this is what happens:
 
 ## Tech stack:
 
-I made use of Slack's Bolt JS SDK and JavaScript. The Slack Bolt JS SDK is a powerful tool that allows for the easy creation of interactive, multi-dimensional Slack apps. It provides a simple, yet comprehensive set of functions that can be used to handle various events and commands on the bot.
+I made use of Slack's Bolt JS SDK and JavaScript. The Slack Bolt JS SDK is a powerful tool that's built for the easy creation of interactive, multi-dimensional Slack apps. It provides a simple, yet comprehensive set of functions that can be used to handle various events and commands on the bot.
 
-This enabled me to create a bot that can respond to any message, command, or event and gives me full control over the conversations and polls that happen on the bot.
+This enabled me to create a bot with very less code, that can respond to any message, command, or event and gives me full control over the conversations and polls that happen using the bot.
 
-By using JavaScript, I was able to create a bot that is lightweight, fast and efficient, making it a perfect fit for the task of creating an anonymous communication tool for teams.
+Since I'm already a JS developer so understanding Bolt JS SDK wasn't a huge learning curve for me. I was able to quickly create this bot that is lightweight, fast and efficient.
 
 I am hosting this on **Vercel** and using **MongoDB** to store the required data. For now, only auth tokens are being stored which are removed whenever the user uninstalls the app, ensuring that the user's data remains private and secure.
 
