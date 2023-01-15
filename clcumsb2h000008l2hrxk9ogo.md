@@ -1,8 +1,8 @@
 # Resume - Hamza Waleed
 
-Hamza is a software engineer specializing in mobile and web app development. He is never afraid of learning new tools, technologies, or development techniques, as he enjoys challenging projects that lead him out of his comfort zone and knowledge set.
+## Intro
 
-Hamza focuses on finding the best solutions to the problems he is presented with, helping his teams thrive and succeed.
+I'm a software engineer specializing in mobile and web app development. I'm never afraid of learning new tools, technologies, or development techniques, as I enjoy challenging projects that lead me out of my comfort zone and knowledge set.
 
 ## Employment
 
@@ -24,10 +24,8 @@ Hamza focuses on finding the best solutions to the problems he is presented with
     
 * **Mentored** around ten recent graduates in close collaboration with another mentor.
     
-
-**Technologies:**
-
-JavaScript, React Native, React, Node.js, Express.js, Firebase, E2E Testing, Jest, Next.js
+* Used technologies: JavaScript, React Native, React, Node.js, Express.js, Firebase, E2E Testing, Jest, Next.js
+    
 
 **Software Engineer**
 
@@ -53,13 +51,12 @@ JavaScript, React Native, React, Node.js, Express.js, Firebase, E2E Testing, Jes
 1. [**Jobcase**](https://www.jobcase.com/about-us/)
     
 
-Jobcase is a leading platform for blue-collar workers in the US, and I've been involved in developing their React Native-based app.  
-  
-Taking part in the team as a senior software engineer, I've designed and shipped new features while maintaining the existing codebase. I also led a group of seven engineers to ensure we would get the expected results and not just meet the timeline but exceed the client's expectations in each sprint.  
-  
+Jobcase is a leading platform for blue-collar workers in the US, and I've been involved in developing their React Native-based app.
+
+Taking part in the team as a senior software engineer, I've designed and shipped new features while maintaining the existing codebase. I also led a group of seven engineers to ensure we would get the expected results and not just meet the timeline but exceed the client's expectations in each sprint.
+
 My technical achievements on this project include:
 
-  
 • Performed multiple code audit activities to identify the bottlenecks and inefficient coding patterns that can be improved  
 • Upgraded the React Native version from 0.64 to 0.68, thus fixing several breaking changes  
 • Improved the app performance by implementing memoization techniques  
@@ -72,8 +69,8 @@ My technical achievements on this project include:
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1673770874075/079563d1-b86b-4495-a0f6-e7fdefa4aa05.png align="center")
 
-The Bitcoin Company allows users to earn Bitcoins back on every purchase and help them learn, earn, spend, save, borrow, and buy Bitcoin, all in one place. We've built a simple, private, and easy-to-use app with all the traditional financial tools expected in a bank but with Bitcoin at its core.  
-  
+The Bitcoin Company allows users to earn Bitcoins back on every purchase and help them learn, earn, spend, save, borrow, and buy Bitcoin, all in one place. We've built a simple, private, and easy-to-use app with all the traditional financial tools expected in a bank but with Bitcoin at its core.
+
 I got this freelance project from my previous client, [Sifir.io](http://Sifir.io), which is also a Bitcoin wallet but with different features. I joined the team in the initial phases, worked on converting mockups to responsive design using code, and integrated some APIs like auth and transaction verification. I also configured the project for the Detox end-to-end testing tool and wrote test cases for every edge case so that we could confidently release it to the public. It was in the beta version when I last worked on it.
 
 1. [Sifir.io](http://Sifir.io)
@@ -81,13 +78,13 @@ I got this freelance project from my previous client, [Sifir.io](http://Sifir.io
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1673770942326/fc317c6b-0391-4eda-a8bc-af10b3993a0b.png align="center")
 
-**Sifir.io** is a react-native based Bitcoin wallet built on Cyphernode, which was lightning-enabled and featured the world's first Wasabi Mobile Wallet. Privacy and UX were not orthogonal.  
-  
+**Sifir.io** is a react-native based Bitcoin wallet built on Cyphernode, which was lightning-enabled and featured the world's first Wasabi Mobile Wallet. Privacy and UX were not orthogonal.
+
 It was an [open-source](https://github.com/Sifir-io/sifir-mobile-wallet) project, and I got the opportunity to work on it as an open-source contributor. My responsibility was converting a unique UI design to code with super-fluid **animations** without overloading the JavaScript thread in React Native.
 
 We wanted it to be **beautiful** and intuitive, and we also **rethought** the user experience to optimize it for mobile and make it usable by everyone. It allows users to select the level of privacy and anonymity they want their coins to have and to set the privacy threshold and wallet to where they wish to send their mixed coins automatically.
 
-**Here's how it looks!**  
+**Here's how it looks!**
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1673770210380/216fb230-8803-453c-8251-cbf18787286a.png align="center")
 
@@ -97,6 +94,4 @@ We wanted it to be **beautiful** and intuitive, and we also **rethought** the us
 
 %[https://twitter.com/SifirApps/status/1269970305977585665?s=20&t=A3rHM0WOkswr5GEBqzVczg] 
 
-  
-  
 The owner, an engineer from Canada, was thrilled with the results and raised my hourly rate twice in a week without my request ;)
