@@ -54,7 +54,7 @@ I'm a software engineer specializing in mobile and web app development. I'm neve
 
 Jobcase is a leading platform for blue-collar workers in the US, and I've been involved in developing their React Native-based app.
 
-Taking part in the team as a senior software engineer, I've **designed** and **shipped** multiple new features while **maintaining** the existing codebase. I also **led** a group of seven engineers to ensure we would get the expected results and not just meet the timeline but exceed the **client's** expectations in each sprint.
+Taking part in the [Arbisoft](https://hamzawaleed.com/resume#heading-employment) team as a senior software engineer, I've **designed** and **shipped** multiple new features while **maintaining** the existing codebase. I also **led** a group of seven engineers to ensure we would get the expected results and not just meet the timeline but exceed the **client's** expectations in each sprint.
 
 My technical achievements on this project include:
 
