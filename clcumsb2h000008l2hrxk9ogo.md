@@ -48,8 +48,7 @@ I'm a software engineer specializing in mobile and web app development. I'm neve
 
 ## Projects
 
-1. [**Jobcase**](https://www.jobcase.com/about-us/)
-    
+**1\.** [**Jobcase**](https://www.jobcase.com/about-us/)
 
 Jobcase is a leading platform for blue-collar workers in the US, and I've been involved in developing their React Native-based app.
 
@@ -64,8 +63,7 @@ My technical achievements on this project include:
 • Mentored a team of junior developers on implementing a full-fledge chat feature, which increased app engagement significantly  
 • Integrated **Detox** testing tool for end-to-end testing of the app over GitLab pipelines using a custom runner, which assures that our `develop` branch is always stable and ready to release
 
-1. [**The Bitcoin Company**](https://thebitcoincompany.com/)
-    
+**2\.** [**The Bitcoin Company**](https://thebitcoincompany.com/)
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1673770874075/079563d1-b86b-4495-a0f6-e7fdefa4aa05.png align="center")
 
@@ -73,8 +71,7 @@ The Bitcoin Company allows users to earn Bitcoins back on every purchase and hel
 
 I got this freelance project from my previous client, [Sifir.io](http://Sifir.io), which is also a Bitcoin wallet but with different features. I joined the team in the initial phases, worked on converting mockups to responsive design using code, and integrated some APIs like auth and transaction verification. I also configured the project for the Detox end-to-end testing tool and wrote test cases for every edge case so that we could confidently release it to the public. It was in the beta version when I last worked on it.
 
-1. [Sifir.io](http://Sifir.io)
-    
+3\. [Sifir.io](http://Sifir.io)
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1673770942326/fc317c6b-0391-4eda-a8bc-af10b3993a0b.png align="center")
 
