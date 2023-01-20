@@ -95,7 +95,7 @@ We wanted it to be **beautiful** and intuitive, and we also **rethought** the us
 
 **Here's how it looks!**
 
-<img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1673770210380/216fb230-8803-453c-8251-cbf18787286a.png" width="200px" />
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1673770210380/216fb230-8803-453c-8251-cbf18787286a.png align="left")
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1673770250792/ba0862a8-e455-48cb-bd63-73f10ee9530a.png align="center")
 
@@ -116,3 +116,15 @@ My first SaaS project: a free **Slack bot** that allows users to **send anonymou
 ![Introducing Anony Botter: The Slack Bot  for Open Communication in Teams](https://hamzawaleed.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1673712988814%2F3d244d03-5e6f-4571-8499-7f2eb37c848d.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=3840&q=75 align="left")
 
 See full details in my blog post: [Introducing Anony Botter: The Slack Bot for Open Communication in Teams](https://hamzawaleed.com/anony-botter-send-anonymous-message-on-slack)
+
+---
+
+## Open Source Contributions
+
+1\. **freeCodeCamp**
+
+My first major contribution to open source 💯🚀
+
+**freeCodeCamp** was going to create its own library of UI components, I got a chance to set up Typescript for their sample components, stories and update jest configurations to support TS.
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1674201105067/b80467df-730b-4cb1-b1a0-d83ad674c8ac.jpeg align="center")
