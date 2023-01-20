@@ -104,3 +104,15 @@ We wanted it to be **beautiful** and intuitive, and we also **rethought** the us
 %[https://twitter.com/SifirApps/status/1269970305977585665?s=20&t=A3rHM0WOkswr5GEBqzVczg] 
 
 The owner, an engineer from Canada, was thrilled with the results and raised my hourly rate twice in a week without my request ;)
+
+---
+
+## Side Projects
+
+1\. [Anony Botter](https://hamzawaleed.com/anony-botter-send-anonymous-message-on-slack)
+
+My first SaaS project: a free **Slack bot** that allows users to **send anonymous messages**, as well as create and participate anonymously in polls.
+
+![Introducing Anony Botter: The Slack Bot  for Open Communication in Teams](https://hamzawaleed.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1673712988814%2F3d244d03-5e6f-4571-8499-7f2eb37c848d.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=3840&q=75 align="left")
+
+See full details in my blog post: [Introducing Anony Botter: The Slack Bot for Open Communication in Teams](https://hamzawaleed.com/anony-botter-send-anonymous-message-on-slack)
