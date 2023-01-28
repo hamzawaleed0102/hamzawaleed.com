@@ -95,9 +95,9 @@ We wanted it to be **beautiful** and intuitive, and we also **rethought** the us
 
 **Here's how it looks!**
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1673770210380/216fb230-8803-453c-8251-cbf18787286a.png?height=550 align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1673770210380/216fb230-8803-453c-8251-cbf18787286a.png?height=610 align="center")
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1673770250792/ba0862a8-e455-48cb-bd63-73f10ee9530a.png?height=550 align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1673770250792/ba0862a8-e455-48cb-bd63-73f10ee9530a.png?height=610 align="center")
 
 <mark>Here's my favourite animation that I developed!</mark>
 
