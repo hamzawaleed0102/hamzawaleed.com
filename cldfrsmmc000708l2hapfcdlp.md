@@ -6,7 +6,51 @@ One example of a successful software engineer who has leveraged the power of blo
 
 Another example is **Kate Gregory**, a software development consultant, speaker and writer. She has used her blog to build her personal brand and as a result, she has been invited to speak at conferences and events and has been featured in publications such as MSDN Magazine and Visual Studio Magazine.
 
-These are just a few examples of how starting a blog as a software engineer can help you achieve success in your career. In this article, we will delve into the specific benefits of blogging and how you can use this powerful tool to achieve your goals in 2023.
+These are just a few examples of how starting a blog as a software engineer can help you achieve success in your career.
+
+### What's your excuse?
+
+Starting a portfolio website or a blog can be a daunting task for many developers. There are a plethora of excuses that developers come up with when they think about building their own portfolio or blog website. From lack of experience and projects to showcase, to not having the time or know-how to design and maintain a website, the list of excuses can go on and on.
+
+Lets take a closer look at some of the most common excuses that developers make when it comes to building their portfolio or blog website, and provide some sarcastic yet informative responses to each of them:
+
+**<mark>"I don't have anything interesting to write about."</mark>**
+
+"Oh, so you're saying your life is boring and you have nothing to share with the world?"
+
+<mark>"I don't have the time to consistently write and maintain a blog."</mark>
+
+"You have time to scroll through social media but not to share your knowledge and thoughts?"
+
+<mark>"I'm not a good writer."</mark>
+
+"You can write code but not a blog post? Interesting."
+
+<mark>"I don't know how to design and build a blog website."</mark>
+
+"You're a developer and you don't know how to create a website? I'm shocked."
+
+<mark>"I don't know how to optimize my blog for SEO and visibility."</mark>
+
+"You can optimize code but not your blog? That's new to me."
+
+<mark>"I don't know what to write about that will make my blog stand out."</mark>
+
+"You're a developer, it's your job to solve problems, find what's interesting and share it."
+
+<mark>"I don't know how to market my blog to attract readers."</mark>
+
+"You can market your product but not your own thoughts and ideas?"
+
+<mark>"I don't know how to monetize my blog."</mark>
+
+"You can create valuable content but not figure out how to make money from it? Interesting."
+
+<mark>"I don't want to be held accountable for what I write on my blog."</mark>
+
+"You're not willing to stand by your own words and thoughts? That's not very professional."
+
+I hope you've got your answer 🫣 Now lets deep delve into the specific benefits of blogging and how you can use this powerful tool to achieve your goals in 2023.
 
 ### **Personal Branding**
 
