@@ -2,8 +2,6 @@
 
 ## Intro
 
-I'm a software engineer specializing in mobile and web app development. I'm never afraid of learning new tools, technologies, or development techniques, as I enjoy challenging projects that lead me out of my comfort zone and knowledge set.
-
 ## Employment
 
 **Senior Software Engineer**
