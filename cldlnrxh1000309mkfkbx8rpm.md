@@ -38,6 +38,8 @@ My achievements on this project include:
 
 **Technologies Used:** Javascript, React Native, Redux, React Query, Detox, Fastlane, Stripe
 
+## Sifir.io
+
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1673770942326/fc317c6b-0391-4eda-a8bc-af10b3993a0b.png align="center")
 
 * Designed and coded a visually stunning, user-friendly Bitcoin **open-source** wallet ([Sifir.io](http://Sifir.io)) in React Native
