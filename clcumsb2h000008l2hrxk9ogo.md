@@ -1,6 +1,14 @@
 # Resume - Hamza Waleed
 
-## Intro
+## Skills
+
+**Expert** in Javascript, React, React Native, Typescript, Redux, Node.js, Next.js, Express.js, HTML, CSS
+
+**Familiar** with MongoDB, SQL, PHP, Firebase, WordPress, Database Design, CI/CD, Monorepo
+
+## Education
+
+**BSCS 2018**, The Superior College, **3.1 CGPA**
 
 ## Employment
 
@@ -8,40 +16,36 @@
 
 *Arbisoft - 2021 - PRESENT*
 
-* Developed an official app for [Jobcase.com](http://Jobcase.com) using React Native. It is a LinkedIn-like platform targeting blue-collar jobs that raised over $80 million in funds, acquired [upwards.net](http://upwards.net), and the combined network is now the third largest online jobs portal.
+* Award-winning software dev firm with global reach, serving Microsoft, edX, Kayak, and Indeed
     
-* **Spearheaded** the end-to-end implementation of the application to ensure a stable release after every couple of sprints.
+* Built multiple enterprise-level apps listed in the next section.
     
-* Led the path to **improving** the performance of the News Feed feature by suggesting well-thought custom solutions.
+* **Developed** [Ricult](https://www.web.ricult.com/farm-management-tool) app using react-native monorepo, **achieved** 90% code shareability across platforms
     
-* Handled regular **communication** with the client in standup calls.
+* Built strong **client relationships** through effective communication in standup calls
     
-* **Helped** the team with standardizing code quality by suggesting refactors and setting coding guidelines. I also **reviewed** major pull requests and proposed alternative solutions.
+* Conducted code audits of multiple apps, boosting performance by identifying inefficiencies and fixing bottlenecks
     
-* Conducted **technical interviews** for senior and junior positions.
+* Conducted senior and junior technical **interviews**, boosting productivity by 30%
     
-* **Mentored** around ten recent graduates in close collaboration with another mentor.
+* **Mentored** around 10 fresh grads; majority promoted within 6 months
     
-* Used technologies: JavaScript, React Native, React, Node.js, Express.js, Firebase, E2E Testing, Jest, Next.js
-    
-
----
 
 **Software Engineer**
 
-*Crewlogix Technologies - 2018 - 2021*
+*Crewlogix Technologies - 2019 - 2021*
 
-* **Developed** multiple React Native apps for social media, banking, eCommerce, and productivity purposes.
+* Developed and deployed multiple React Native apps for social media, banking, eCommerce, and productivity
     
-* **Built** new user-facing features using reusable code and future-oriented libraries.
+* **Built** new user-facing features and a whole design-system around it which was later used in multiple apps
     
-* **Ensured** the technical feasibility of UI/UX designs.
+* **Ensured** the technical feasibility of UI/UX provided by design team
     
-* **Optimized** the applications for maximum speed and scalability.
+* Improved existing apps performance and scalability through optimization
     
-* **Collaborated** with the back-end team and other involved stakeholders.
+* Worked closely with back-end team and stakeholders to deliver projects
     
-* Progressed to **senior software engineer** and managed a team of recent graduates.
+* **Progressed** to senior software engineer and **mentored** a couple of recent graduates
     
 
 ## Projects
@@ -50,46 +54,46 @@
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1673771641134/a929f044-fae1-4e2e-b7cf-cc069310c0fb.png align="center")
 
-Jobcase is a leading platform for blue-collar workers in the US, and I've been involved in developing their React Native-based app.
+[Jobcase](https://www.jobcase.com/about-us/) is a leading platform for blue-collar workers. Jobcase acquired upward.net, raised over $80 million and became the third-largest online jobs portal. I've developed multiple new features for Jobcase as Sr. Software Engineer at Arbisoft.
 
-Taking part in the [Arbisoft](https://hamzawaleed.com/resume#heading-employment) team as a senior software engineer, I've **designed** and **shipped** multiple new features while **maintaining** the existing codebase. I also **led** a group of seven engineers to ensure we would get the expected results and not just meet the timeline but exceed the **client's** expectations in each sprint.
+My achievements on this project include:
 
-My technical achievements on this project include:
-
-* **Performed** multiple code audit activities to **identify** the bottlenecks and inefficient coding patterns that can be improved
+* Led a team of seven engineers to exceed client expectations and deliver high-quality results in each sprint.
     
-* **Upgraded** the React Native version from 0.64 to 0.68, thus fixing several breaking changes
+* Led end-to-end implementation and **improved** performance from 20fps to 50+fps
     
-* **Improved** the app performance by implementing memoization techniques
+* Upgraded React Native from 0.64 to 0.68, resolving several breaking changes
     
-* **Added** a feature that allows app users to connect
+* Improved app speed through effective use of memoization.
     
-* **Mentored** a team of junior developers on implementing a full-fledge chat feature, which increased app engagement significantly
+* Implemented a user-connection feature
     
-* **Integrated** Detox testing tool for end-to-end testing of the app over GitLab pipelines using a custom runner, which assures that our `develop` branch is always stable and ready to release
+* Streamlined QA with integration of Detox end-to-end testing and GitLab pipelines using custom runner
     
-
----
 
 **2.** [**The Bitcoin Company**](https://thebitcoincompany.com/)
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1673770874075/079563d1-b86b-4495-a0f6-e7fdefa4aa05.png align="center")
 
-The Bitcoin Company allows users to earn Bitcoins back on every purchase and help them learn, earn, spend, save, borrow, and buy Bitcoin, all in one place. We've built a simple, private, and easy-to-use app with all the traditional financial tools expected in a bank but with Bitcoin at its core.
-
-I got this freelance project from my previous client, [Sifir.io](http://Sifir.io), which is also a Bitcoin wallet but with different features. I joined the team in the initial phases, worked on converting mockups to responsive design using code, and integrated some APIs like auth and transaction verification. I also configured the project for the Detox end-to-end testing tool and wrote test cases for every edge case so that we could confidently release it to the public. It was in the beta version when I last worked on it.
-
----
+* Developed The Bitcoin Company app, a simple, private, and easy-to-use platform for earning, learning, spending and saving Bitcoin
+    
+* Wrote test cases to ensure reliable public release in beta version
+    
+* Got this freelance project from a previous client([Sifir.io](http://Sifir.io)) to convert mockups to responsive design, integrate APIs, and configure end-to-end testing with Detox
+    
 
 3\. [Sifir.io](http://Sifir.io)
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1673770942326/fc317c6b-0391-4eda-a8bc-af10b3993a0b.png align="center")
 
-**Sifir.io** is a react-native based Bitcoin wallet built on Cyphernode, which was lightning-enabled and featured the world's first Wasabi Mobile Wallet. Privacy and UX were not orthogonal.
-
-It was an [open-source](https://github.com/Sifir-io/sifir-mobile-wallet) project, and I got the opportunity to work on it as an open-source contributor. My responsibility was converting a unique UI design to code with super-fluid **animations** without overloading the JavaScript thread in React Native.
-
-We wanted it to be **beautiful** and intuitive, and we also **rethought** the user experience to optimize it for mobile and make it usable by everyone. It allows users to select the level of privacy and anonymity they want their coins to have and to set the privacy threshold and wallet to where they wish to send their mixed coins automatically.
+* Designed and coded a visually stunning, user-friendly Bitcoin **open-source** wallet ([Sifir.io](http://Sifir.io)) in React Native
+    
+* Optimized animations for fast performance and minimized JS overload
+    
+* Provided customization options for privacy and anonymity
+    
+* Rethought UX for optimal mobile use and accessibility for all users
+    
 
 **Here's how it looks!**
 
@@ -101,7 +105,7 @@ We wanted it to be **beautiful** and intuitive, and we also **rethought** the us
 
 %[https://twitter.com/SifirApps/status/1269970305977585665?s=20&t=A3rHM0WOkswr5GEBqzVczg] 
 
-The owner, an engineer from Canada, was thrilled with the results and raised my hourly rate twice in a week without my request ;)
+**The owner, an engineer from Canada, was thrilled with the results and raised my hourly rate twice in a week without my request ;)**
 
 ---
 
@@ -111,11 +115,7 @@ The owner, an engineer from Canada, was thrilled with the results and raised my 
 
 My first SaaS project: a free **Slack bot** that allows users to **send anonymous messages**, as well as create and participate anonymously in polls.
 
-![Introducing Anony Botter: The Slack Bot  for Open Communication in Teams](https://hamzawaleed.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1673712988814%2F3d244d03-5e6f-4571-8499-7f2eb37c848d.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=3840&q=75 align="left")
-
-<mark>See full details in my blog post:</mark> [Introducing Anony Botter: The Slack Bot for Open Communication in Teams](https://hamzawaleed.com/anony-botter-send-anonymous-message-on-slack)
-
----
+See full details in my blog post: [Introducing Anony Botter: The Slack Bot for Open Communication in Teams](https://hamzawaleed.com/anony-botter-send-anonymous-message-on-slack)
 
 ## Open Source Contributions
 
