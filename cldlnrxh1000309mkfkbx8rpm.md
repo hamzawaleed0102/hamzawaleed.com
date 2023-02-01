@@ -1,8 +1,8 @@
 # Portfolio
 
-A single-page PDF version of my work experience is available at [this link](https://drive.google.com/file/d/14G67zLZ0NclBwfxxrpwg_V0rUwaUU_yw/view?usp=sharing).
+Hello 👋 If you're looking for a single-page PDF version of my work experience please check out [this link](https://drive.google.com/file/d/14G67zLZ0NclBwfxxrpwg_V0rUwaUU_yw/view?usp=sharing).
 
-**1.** [**Jobcase**](https://www.jobcase.com/about-us/)
+## Jobcase
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1673771641134/a929f044-fae1-4e2e-b7cf-cc069310c0fb.png align="center")
 
@@ -25,7 +25,7 @@ My achievements on this project include:
 
 **Technologies Used:** Javascript, React Native, Redux, Detox, Jest, Launch Darkly, CI/CD, Fastlane, Adjust SDK
 
-**2.** [**The Bitcoin Company**](https://thebitcoincompany.com/)
+## The Bitcoin Company
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1673770874075/079563d1-b86b-4495-a0f6-e7fdefa4aa05.png align="center")
 
@@ -38,7 +38,7 @@ My achievements on this project include:
 
 **Technologies Used:** Javascript, React Native, Redux, React Query, Detox, Fastlane, Stripe
 
-3\. [Sifir.io](http://Sifir.io)
+## Sifir.io
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1673770942326/fc317c6b-0391-4eda-a8bc-af10b3993a0b.png align="center")
 
@@ -65,9 +65,7 @@ My achievements on this project include:
 
 **Technologies Used:** Javascript, React Native, D3.js
 
-## Side Projects
-
-1\. [Anony Botter](https://hamzawaleed.com/anony-botter-send-anonymous-message-on-slack)
+## Anony Botter
 
 My first SaaS project: a free **Slack bot** that allows users to **send anonymous messages**, as well as create and participate anonymously in polls.
 
@@ -75,11 +73,7 @@ See full details in my blog post: [Introducing Anony Botter: The Slack Bot for O
 
 **Technologies Used:** Javascript, Slack Bolt JS SDK, Vercel, MongoDB
 
-## Open Source Contributions
-
-1\. **freeCodeCamp**
-
-My first major contribution to open source 💯🚀
+## Open Source Contribution @ freeCodeCamp
 
 **freeCodeCamp** was going to create its own library of UI components, I got a chance to set up Typescript for their sample components, stories and update jest configurations to support TS.
 
