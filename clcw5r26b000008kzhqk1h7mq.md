@@ -1,5 +1,7 @@
 # Introducing Anony Botter: The Slack Bot  for Open Communication in Teams
 
+%%\[producthunt\]
+
 I am thrilled to announce the launch of my first SaaS project: a free Slack bot that allows users to send and receive anonymous messages, as well as participate in anonymous polls.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1673713029350/47e727f1-e094-4ad2-8df5-e42880c9035d.png align="center")
