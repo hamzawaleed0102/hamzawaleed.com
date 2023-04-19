@@ -1,8 +1,16 @@
-# Introducing Anony Botter: The Slack Bot  for Open Communication in Teams
+---
+title: "Introducing Anony Botter: The Slack Bot  for Open Communication in Teams"
+seoTitle: "Anonymity Bot: Send anonymous messages on slack"
+seoDescription: "Send unlimited free anonymous messages on slack. Use this Anonymity Bot to build better team communication experience."
+datePublished: Sat Jan 14 2023 16:23:32 GMT+0000 (Coordinated Universal Time)
+cuid: clcw5r26b000008kzhqk1h7mq
+slug: anony-botter-send-anonymous-message-on-slack
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1674899889550/1abc5ad0-33e7-4427-8d1f-79af1e8d3e86.png
+tags: projects, saas
 
+---
 
-%%[producthunt]
-I am thrilled to announce the launch of my first SaaS project: a free Slack bot that allows users to send and receive anonymous messages, as well as participate in anonymous polls.
+%%\[producthunt\] I am thrilled to announce the launch of my first SaaS project: a free Slack bot that allows users to send and receive anonymous messages, as well as participate in anonymous polls.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1673713029350/47e727f1-e094-4ad2-8df5-e42880c9035d.png align="center")
 
@@ -21,6 +29,8 @@ Here's how the poll looks when posted:
 When the majority of readers downvote a message, this is what happens:
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1673713176898/0d21fb40-aa9d-43a7-a787-a192d3430dc3.png align="center")
+
+**Update:** Based on the user's feedback, flagged messages can no longer be seen - That `View` button in the above screenshot - is no longer there. 😉
 
 ## Tech stack:
 
@@ -42,10 +52,10 @@ I am confident that this bot will be a valuable tool for teams everywhere, and I
 
 ## Try yourself!
 
-If you're interested in installing the Anonymity Slack Bot in your workspace, you can easily do so by visiting [**Anonymity**](https://anonymity.webflow.io/). On this website, you'll find an **Add to Slack** button to integrate it into your Slack workspace.
+If you're interested in installing the Anonymity Slack Bot in your workspace, you can easily do so by visiting [**<mark>Anonymity</mark>**](https://anonymity.webflow.io/). On this website, you'll find an [**<mark>Add to Slack</mark>**](https://anonymity.webflow.io/) button to integrate it into your Slack workspace.
 
 Once installed, you'll be able to start using the bot right away and experience the benefits of anonymous communication and collaboration within your team.
 
-To start using the bot, you can run `/anony` command in any slack channel. The bot must be invited to private channels to work.
+To start using the bot, you can run `/anony` command in any Slack channel. The bot must be invited to private channels to work.
 
 Thank you for your support and stay tuned for more exciting SaaS projects from me in the future.
