@@ -1,4 +1,14 @@
-# Portfolio - Hamza Waleed
+---
+title: "Portfolio - Hamza Waleed"
+seoTitle: "Portfolio | Mobile and Web Development Projects by Hamza Waleed"
+seoDescription: "Explore my portfolio of top-notch mobile and web development projects, including both opensource and freelance work. Discover my expertise in delivering use"
+datePublished: Wed Feb 01 2023 12:42:20 GMT+0000 (Coordinated Universal Time)
+cuid: cldlnrxh1000309mkfkbx8rpm
+slug: portfolio
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1675256906202/6495ecfc-cfbc-40ce-ae62-d095b9135507.png
+tags: portfolio, resume, cv
+
+---
 
 Hi 👋 Glad to see you here!
 
@@ -69,7 +79,7 @@ My achievements on this project include:
 
 ## Anony Botter
 
-My first SaaS project: a free **Slack bot** that allows users to **send anonymous messages**, as well as create and participate anonymously in polls.
+My first personal SaaS project: a free **Slack bot** that allows users to **send anonymous messages**, as well as create and participate anonymously in polls.
 
 See full details in my blog post: [Introducing Anony Botter: The Slack Bot for Open Communication in Teams](https://hamzawaleed.com/anony-botter-send-anonymous-message-on-slack)
 
