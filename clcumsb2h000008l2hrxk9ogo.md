@@ -1,4 +1,14 @@
-# Resume - Hamza Waleed
+---
+title: "Resume - Hamza Waleed"
+seoTitle: "Resume - Hamza Waleed"
+seoDescription: "Resume of a full stack javascript, react, react native developer"
+datePublished: Fri Jan 13 2023 14:44:51 GMT+0000 (Coordinated Universal Time)
+cuid: clcumsb2h000008l2hrxk9ogo
+slug: resume
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1673774582027/79069002-ea61-4fea-a147-c5f5059770bf.jpeg
+tags: projects, resume, cv
+
+---
 
 Hi 👋 Glad to see you here!
 
