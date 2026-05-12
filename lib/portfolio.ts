@@ -17,101 +17,54 @@ export type Role = {
 export const roles: Role[] = [
   {
     years: "now",
-    yearsRange: { start: "2025" },
-    title: "Principal Engineer",
-    company: "Stripe",
+    yearsRange: { start: "2021" },
+    title: "Principal Software Engineer",
+    company: "Arbisoft",
     highlight: true,
     projects: [
       {
-        name: "Payments Reliability Platform",
-        url: "#",
+        name: "Jobcase",
+        url: "https://www.jobcase.com/about-us/",
         description:
-          "Re-architected retry & circuit-breaking for the global pay-in path. Cut tail latency 38%.",
-        tags: ["go", "kafka", "postgres"],
-      },
-      {
-        name: "Developer Platform v3",
-        url: "#",
-        description:
-          "Shipped the new SDK runtime and idempotency layer. Adopted by 4,000+ integrators.",
-        tags: ["typescript", "grpc"],
+          "Led seven engineers on the React Native app for the largest US blue-collar jobs platform. Took rendering from 20fps to 50+fps, upgraded RN 0.64 → 0.68, and shipped user-connection features behind LaunchDarkly. Added Detox + GitLab pipelines on a custom runner.",
+        tags: ["react native", "redux", "detox", "ci/cd"],
       },
     ],
   },
   {
-    years: "'22 — '25",
-    yearsRange: { start: "2022", end: "2025" },
-    title: "Staff Engineer",
-    company: "Figma",
+    years: "'20 — '21",
+    yearsRange: { start: "2020", end: "2021" },
+    title: "Freelance React Native Engineer",
+    company: "Independent",
     projects: [
       {
-        name: "Multiplayer presence sync",
-        url: "#",
+        name: "The Bitcoin Company",
+        url: "https://thebitcoincompany.com/",
         description:
-          "Rewrote the live-cursor and selection sync layer. Halved bandwidth for files at scale.",
-        tags: ["rust", "websockets"],
+          "Shipped a private, easy-to-use mobile app for earning, learning, spending, and saving Bitcoin. Built from mockups to responsive UI, wired up APIs, and added Detox end-to-end coverage. Referred from a previous client (Sifir.io).",
+        tags: ["react native", "redux", "react query", "detox", "stripe"],
       },
       {
-        name: "Branching for design files",
-        url: "#",
-        description: "Co-led the data model for file branching and merge.",
-        tags: ["postgres", "crdts"],
+        name: "Sifir.io",
+        url: "https://sifir.io",
+        description:
+          "Designed and coded an open-source Bitcoin wallet in React Native. Optimized animations with D3.js to keep the bridge lean, built privacy/anonymity options, and reworked UX for mobile-first accessibility. The owner doubled my rate twice in a week.",
+        tags: ["react native", "d3.js", "open source"],
       },
     ],
   },
   {
-    years: "'19 — '22",
-    yearsRange: { start: "2019", end: "2022" },
-    title: "Senior Engineer",
-    company: "Shopify",
+    years: "'22",
+    yearsRange: { start: "2022", end: "2022" },
+    title: "Open Source Contributor",
+    company: "freeCodeCamp",
     projects: [
       {
-        name: "Storefront edge rendering",
-        url: "#",
+        name: "UI components TypeScript setup",
+        url: "https://www.freecodecamp.org/",
         description:
-          "Moved storefront rendering to edge workers. p95 from 480ms to 90ms.",
-        tags: ["ruby", "cloudflare"],
-      },
-      {
-        name: "Hydrogen contributions",
-        url: "#",
-        description: "Early commits on the React storefront framework.",
-        tags: ["react", "oss"],
-      },
-    ],
-  },
-  {
-    years: "'16 — '19",
-    yearsRange: { start: "2016", end: "2019" },
-    title: "Software Engineer",
-    company: "Khan Academy",
-    projects: [
-      {
-        name: "Content delivery rewrite",
-        url: "#",
-        description: "Migrated the lesson CDN. Halved infra cost.",
-        tags: ["python", "gcp"],
-      },
-      {
-        name: "Learner analytics",
-        url: "#",
-        description: "Built the event pipeline that powers progress tracking.",
-        tags: ["bigquery"],
-      },
-    ],
-  },
-  {
-    years: "'14 — '16",
-    yearsRange: { start: "2014", end: "2016" },
-    title: "Backend Engineer",
-    company: "Markhor",
-    projects: [
-      {
-        name: "First production stack",
-        url: "#",
-        description:
-          "Built the original API and auth from scratch. Co-founder #5. Sold 2016.",
-        tags: ["node.js", "mongo"],
+          "Set up TypeScript for freeCodeCamp's new UI component library — sample components, stories, and Jest config updates to support TS end-to-end.",
+        tags: ["typescript", "jest", "react native"],
       },
     ],
   },
