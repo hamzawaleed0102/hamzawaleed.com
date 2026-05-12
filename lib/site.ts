@@ -10,6 +10,6 @@ export const site = {
   social: {
     x: "https://x.com/HamzaWaleed0102",
     github: "https://github.com/hamzawaleed0102",
-    linkedin: "https://www.linkedin.com/in/hamzawaleed",
+    linkedin: "https://www.linkedin.com/in/hamza-waleed/",
   },
 } as const;

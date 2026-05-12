@@ -56,7 +56,7 @@ const channels: Channel[] = [
   {
     num: "04",
     name: "LinkedIn",
-    handle: "linkedin.com/in/hamzawaleed",
+    handle: "linkedin.com/in/hamza-waleed",
     href: site.social.linkedin,
     external: true,
   },
