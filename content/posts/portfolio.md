@@ -18,7 +18,7 @@ If you're looking for a single-page PDF version of my work experience please che
 
 ![Introducing CashFlow AI — Expense Tracker](/blog-images/26a6e5c1-8718-496a-92a0-7a3f8035361e.png)
 
-My second personal product, built with React Native and Python Django, lets users track expenses without filling out forms. Type your income and expenses as a sentence — for example, *"spent $20 on gas, $100 on tuition fees, earned $500 from freelancing"* — and the app creates three entries: two expenses and one income. Read the dedicated post [here](/writing/introducing-cashflow-ai-expense-tracker).
+My second personal product, built with React Native and Python Django, lets users track expenses without filling out forms. Type your income and expenses as a sentence — for example, *"spent $20 on gas, $100 on tuition fees, earned $500 from freelancing"* — and the app creates three entries: two expenses and one income. Try it at [cashflow.hamzawaleed.com](https://cashflow.hamzawaleed.com/).
 
 **Technologies Used:** React Native, Python, Django, AI/LLM
 

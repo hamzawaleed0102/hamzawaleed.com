@@ -11,7 +11,7 @@ export const products: Product[] = [
   {
     num: "01",
     name: "CashFlow AI",
-    url: "#",
+    url: "https://cashflow.hamzawaleed.com/",
     blurb:
       "A smart expense tracker. Type a sentence like “spent $20 on gas, $100 on tuition, earned $500 freelancing” and it splits everything into the right entries automatically.",
     year: "2025",
