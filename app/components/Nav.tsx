@@ -2,11 +2,10 @@ import Link from "next/link";
 import { ThemeToggle } from "./ThemeToggle";
 
 type Props = {
-  current?: "writing" | "products" | "portfolio";
-  showSearch?: boolean;
+  current?: "writing" | "products" | "portfolio" | "contact";
 };
 
-export function Nav({ current = "writing", showSearch = false }: Props) {
+export function Nav({ current = "writing" }: Props) {
   return (
     <nav className="nav" aria-label="Primary">
       <Link href="/" className="brand">
@@ -35,25 +34,13 @@ export function Nav({ current = "writing", showSearch = false }: Props) {
         >
           portfolio
         </Link>
-        <Link href="#contact">contact</Link>
-        {showSearch ? (
-          <button type="button" className="search" aria-label="Search">
-            <svg
-              width="11"
-              height="11"
-              viewBox="0 0 16 16"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.6"
-              strokeLinecap="round"
-              aria-hidden="true"
-            >
-              <circle cx="7" cy="7" r="4.5" />
-              <path d="M10.5 10.5L14 14" />
-            </svg>
-            <span className="search-label">search</span>
-          </button>
-        ) : null}
+        <Link
+          href="/contact"
+          aria-current={current === "contact" ? "page" : undefined}
+          className={current === "contact" ? "is-on" : undefined}
+        >
+          contact
+        </Link>
         <ThemeToggle />
       </div>
     </nav>

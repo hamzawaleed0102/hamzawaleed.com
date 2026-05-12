@@ -41,7 +41,7 @@ const blogJsonLd = {
 export default function HomePage() {
   return (
     <>
-      <Nav current="writing" showSearch />
+      <Nav current="writing" />
       <main className="wrap" data-screen-label="Home">
         <section className="hero">
           <h1 className="title">
