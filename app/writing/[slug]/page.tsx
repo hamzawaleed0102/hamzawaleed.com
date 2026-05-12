@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { marked } from "marked";
+import { Marked } from "marked";
 import { Nav } from "../../components/Nav";
 import { Footer } from "../../components/Footer";
 import { allPosts, getPostBySlug } from "@/lib/posts";
@@ -47,6 +47,20 @@ export async function generateMetadata(
   };
 }
 
+const markedRenderer = new Marked({
+  renderer: {
+    link({ href, title, tokens }) {
+      const text = this.parser.parseInline(tokens);
+      const isExternal = /^https?:\/\//i.test(href);
+      const titleAttr = title ? ` title="${title}"` : "";
+      const targetAttr = isExternal
+        ? ' target="_blank" rel="noopener noreferrer"'
+        : "";
+      return `<a href="${href}"${titleAttr}${targetAttr}>${text}</a>`;
+    },
+  },
+});
+
 function stripMarkdown(md: string): string {
   return md
     .replace(/```[\s\S]*?```/g, "")
@@ -67,7 +81,7 @@ export default async function WritingPostPage({ params }: PageProps) {
   const post = getPostBySlug(slug);
   if (!post) notFound();
 
-  const html = marked.parse(post.body, { async: false }) as string;
+  const html = markedRenderer.parse(post.body, { async: false }) as string;
 
   const articleJsonLd = {
     "@context": "https://schema.org",
