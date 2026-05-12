@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { site } from "@/lib/site";
-import { posts } from "@/lib/posts";
+import { allPosts } from "@/lib/posts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -12,7 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/portfolio`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
   ];
 
-  const postEntries: MetadataRoute.Sitemap = posts.map((p) => ({
+  const postEntries: MetadataRoute.Sitemap = allPosts.map((p) => ({
     url: `${base}/writing/${p.slug}`,
     lastModified: new Date(p.date),
     changeFrequency: "yearly",

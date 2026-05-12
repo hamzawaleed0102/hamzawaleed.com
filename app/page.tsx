@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import Link from "next/link";
 import { Nav } from "./components/Nav";
 import { Footer } from "./components/Footer";
@@ -15,12 +16,32 @@ export const metadata: Metadata = {
     url: "/",
     type: "website",
   },
+  twitter: {
+    title: site.title,
+    description: site.description,
+  },
+};
+
+const blogJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  name: `${site.name} — Writing`,
+  url: `${site.url}/`,
+  description: site.description,
+  author: { "@type": "Person", name: site.name, url: site.url },
+  blogPost: posts.map((p) => ({
+    "@type": "BlogPosting",
+    headline: p.title,
+    datePublished: new Date(p.date).toISOString(),
+    url: `${site.url}/writing/${p.slug}`,
+    author: { "@type": "Person", name: site.name, url: site.url },
+  })),
 };
 
 export default function HomePage() {
   return (
     <>
-      <Nav current="writing" />
+      <Nav current="writing" showSearch />
       <main className="wrap" data-screen-label="Home">
         <section className="hero">
           <h1 className="title">
@@ -39,8 +60,12 @@ export default function HomePage() {
         <ul className="posts">
           {posts.map((p) => (
             <li key={p.slug}>
-              <Link className="post" href={`/writing/${p.slug}`}>
-                <span className="date">{p.dateLabel}</span>
+              <Link
+                className="post"
+                href={`/writing/${p.slug}`}
+                aria-label={`${p.title} — ${p.minutes} minute read, ${p.dateLabel}`}
+              >
+                <time className="date" dateTime={p.date}>{p.dateLabel}</time>
                 <span className="post-title">{p.title}</span>
                 <span className="min">{p.minutes} min</span>
               </Link>
@@ -48,12 +73,15 @@ export default function HomePage() {
           ))}
         </ul>
 
-        <Link href="/writing" className="archive-link">
-          browse the full archive →
-        </Link>
-
         <Footer />
       </main>
+
+      <Script
+        id="ld-blog"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogJsonLd) }}
+      />
     </>
   );
 }
