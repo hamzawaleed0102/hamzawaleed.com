@@ -23,6 +23,13 @@ export const roles: Role[] = [
     highlight: true,
     projects: [
       {
+        name: "Open edX",
+        url: "/writing/openedx-contributions",
+        description:
+          "Two years of merged PRs across the Open edX enterprise stack — LMS/HRIS integration resilience (Canvas, Moodle, Degreed, Cornerstone, Blackboard), a system-wide provisioning-admin role and RBAC migration, learner-credit request endpoints with Braze triggers, SSO/SAML cleanups, and catalog filtering improvements.",
+        tags: ["python", "django", "react", "open source"],
+      },
+      {
         name: "Jobcase",
         url: "https://www.jobcase.com/about-us/",
         description:

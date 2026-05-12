@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Script from "next/script";
 import { Nav } from "../components/Nav";
 import { Footer } from "../components/Footer";
@@ -84,19 +85,41 @@ export default function PortfolioPage() {
                 </h2>
               </div>
               <div className="projects">
-                {role.projects.map((project) => (
-                  <a key={project.name} className="project" href={project.url}>
-                    <div>
-                      <div className="pname">{project.name}</div>
-                      <p className="pdesc">{project.description}</p>
-                    </div>
-                    <div className="tags" aria-label="Technologies">
-                      {project.tags.map((tag) => (
-                        <span key={tag} className="tag">{tag}</span>
-                      ))}
-                    </div>
-                  </a>
-                ))}
+                {role.projects.map((project) => {
+                  const isInternal = project.url.startsWith("/");
+                  const inner = (
+                    <>
+                      <div>
+                        <div className="pname">{project.name}</div>
+                        <p className="pdesc">{project.description}</p>
+                      </div>
+                      <div className="tags" aria-label="Technologies">
+                        {project.tags.map((tag) => (
+                          <span key={tag} className="tag">{tag}</span>
+                        ))}
+                      </div>
+                    </>
+                  );
+                  return isInternal ? (
+                    <Link
+                      key={project.name}
+                      className="project"
+                      href={project.url}
+                    >
+                      {inner}
+                    </Link>
+                  ) : (
+                    <a
+                      key={project.name}
+                      className="project"
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {inner}
+                    </a>
+                  );
+                })}
               </div>
             </section>
           );
