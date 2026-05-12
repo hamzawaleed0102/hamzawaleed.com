@@ -86,7 +86,7 @@ const personJsonLd = {
   url: site.url,
   jobTitle: "Principal Software Engineer",
   email: `mailto:${site.email}`,
-  sameAs: [site.social.twitter, site.social.github, site.social.linkedin],
+  sameAs: [site.social.x, site.social.github, site.social.linkedin],
 };
 
 const websiteJsonLd = {

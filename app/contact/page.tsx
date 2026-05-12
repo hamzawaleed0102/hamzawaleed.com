@@ -41,15 +41,15 @@ const channels: Channel[] = [
   },
   {
     num: "02",
-    name: "Twitter / X",
+    name: "X",
     handle: site.twitter,
-    href: site.social.twitter,
+    href: site.social.x,
     external: true,
   },
   {
     num: "03",
     name: "GitHub",
-    handle: "github.com/hamzawaleed",
+    handle: "github.com/hamzawaleed0102",
     href: site.social.github,
     external: true,
   },
@@ -68,7 +68,7 @@ const personJsonLd = {
   name: site.name,
   url: `${site.url}/contact`,
   email: `mailto:${site.email}`,
-  sameAs: [site.social.twitter, site.social.github, site.social.linkedin],
+  sameAs: [site.social.x, site.social.github, site.social.linkedin],
 };
 
 const breadcrumbJsonLd = {

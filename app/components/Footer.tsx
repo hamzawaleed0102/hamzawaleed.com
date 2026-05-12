@@ -5,7 +5,7 @@ export function Footer() {
     <footer className="foot" id="contact">
       <span className="copy">© {new Date().getFullYear()}</span>
       <div className="socials">
-        <a href={site.social.twitter} aria-label="Twitter / X" rel="me noopener" target="_blank">
+        <a href={site.social.x} aria-label="X" rel="me noopener" target="_blank">
           <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
             <path d="M12.6 1.5h2.3L9.9 7.2 15.7 14.5h-4.5L7.6 9.9l-4.2 4.6H1l5.3-5.9L.7 1.5h4.6l3.3 4.2 3.9-4.2zM11.8 13.2h1.3L4.3 2.8H2.9l8.9 10.4z" />
           </svg>
