@@ -1,3 +1,10 @@
+---
+title: "Building a Slack Bot for Fun and Profit: A Guide to Using Slack Bolt JS SDK"
+datePublished: Fri Jan 20 2023 00:00:00 GMT+0000 (Coordinated Universal Time)
+slug: building-a-slack-bot-for-fun-and-profit
+tags: slack, bots, javascript
+---
+
 # Building a Slack Bot for Fun and Profit: A Guide to Using Slack Bolt JS SDK
 
 Hey there! Have you ever wanted to create your own Slack bot to automate some tasks or just have some fun with your team? Well, you're in luck because it's quite easy to do with the Slack Bolt JS SDK. In this post, I'll walk you through the process of creating a simple Slack bot using the SDK.

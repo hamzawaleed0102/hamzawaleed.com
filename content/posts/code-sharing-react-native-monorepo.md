@@ -1,3 +1,10 @@
+---
+title: "Effective Code Sharing in React Native with Monorepo Architecture"
+datePublished: Sun Feb 12 2023 00:00:00 GMT+0000 (Coordinated Universal Time)
+slug: code-sharing-react-native-monorepo
+tags: react-native, monorepo, javascript
+---
+
 # Effective Code Sharing in React Native with Monorepo Architecture
 
 Have you ever wondered if there's a better way to manage your React Native projects that are built for both web and native platforms? Have you struggled with managing multiple repositories, keeping them in sync, and ensuring consistency across your codebase?

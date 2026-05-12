@@ -16,31 +16,6 @@ export type Post = {
 
 const POSTS_DIR = path.join(process.cwd(), "content", "posts");
 
-// Hashnode CUID filenames don't sort by date and aren't URL-friendly.
-// This table maps the source filename → published date + slug.
-// Dates are pulled from the original Hashnode frontmatter where present,
-// or from the first-commit date in the legacy blog repo otherwise.
-const META: Record<string, { date: string; slug?: string }> = {
-  "clcuf63u2000j08l8ai1dbkp7.md": {
-    date: "2023-01-13",
-    slug: "master-the-art-of-react-hooks",
-  },
-  "clcumsb2h000008l2hrxk9ogo.md": { date: "2023-01-13", slug: "resume" },
-  "clcw5r26b000008kzhqk1h7mq.md": {
-    date: "2023-01-14",
-    slug: "anony-botter-send-anonymous-message-on-slack",
-  },
-  "cld4mpxdo02vk3pnvd5hp50mp.md": {
-    date: "2023-01-20",
-    slug: "building-a-slack-bot-for-fun-and-profit",
-  },
-  "cldlnrxh1000309mkfkbx8rpm.md": { date: "2023-02-01", slug: "portfolio" },
-  "cle18fqcb00010ajo9b2d43wn.md": {
-    date: "2023-02-12",
-    slug: "code-sharing-react-native-monorepo",
-  },
-};
-
 // Slugs that exist as standalone pages, not as blog entries.
 const HIDDEN_FROM_INDEX = new Set(["resume", "portfolio"]);
 
@@ -72,7 +47,6 @@ function parseFile(filename: string): Post {
   const raw = fs.readFileSync(filepath, "utf8");
   const { data, content } = matter(raw);
 
-  const meta = META[filename] ?? { date: "1970-01-01", slug: filename.replace(/\.md$/, "") };
   const stripped = stripLeadingH1(content);
 
   const title =
@@ -81,9 +55,9 @@ function parseFile(filename: string): Post {
   const date =
     typeof data.datePublished === "string"
       ? new Date(data.datePublished).toISOString().slice(0, 10)
-      : meta.date;
+      : "1970-01-01";
 
-  const slug = (data.slug as string | undefined) ?? meta.slug!;
+  const slug = (data.slug as string | undefined) ?? filename.replace(/\.md$/, "");
 
   const tags =
     typeof data.tags === "string"
