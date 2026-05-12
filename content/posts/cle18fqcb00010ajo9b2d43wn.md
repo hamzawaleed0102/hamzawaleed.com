@@ -68,7 +68,7 @@ Additionally, a monorepo does not necessarily mean a monolithic architecture. Th
 
 ## Module Boundaries in a Monorepo Architecture
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1676194505918/261bdcef-93eb-43dc-9f75-b327bcbd072c.webp align="center")
+![](/blog-images/261bdcef-93eb-43dc-9f75-b327bcbd072c.webp align="center")
 
 Module boundaries are a key aspect of managing a monorepo architecture. They define the boundaries between different parts of the codebase and help to maintain separation between projects and dependencies. This can help to ensure that changes to one project do not impact other projects in the monorepo, and that each project can be developed and maintained independently.
 

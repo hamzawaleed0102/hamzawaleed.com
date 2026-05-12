@@ -5,30 +5,30 @@ seoDescription: "Send unlimited free anonymous messages on slack. Use this Anony
 datePublished: Sat Jan 14 2023 16:23:32 GMT+0000 (Coordinated Universal Time)
 cuid: clcw5r26b000008kzhqk1h7mq
 slug: anony-botter-send-anonymous-message-on-slack
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1674899889550/1abc5ad0-33e7-4427-8d1f-79af1e8d3e86.png
+cover: /blog-images/1abc5ad0-33e7-4427-8d1f-79af1e8d3e86.png
 tags: projects, saas
 
 ---
 
 I am thrilled to announce the launch of my first SaaS project: a free Slack bot that allows users to send anonymous messages, as well as participate in anonymous polls.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1673713029350/47e727f1-e094-4ad2-8df5-e42880c9035d.png align="center")
+![](/blog-images/47e727f1-e094-4ad2-8df5-e42880c9035d.png align="center")
 
 This bot, which I have been working tirelessly on for the past few months, is designed to promote open communication and collaboration within teams, without the constraints of social hierarchies or the fear of judgement.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1673713057825/8ab27c57-e0df-46ce-9ef9-2481f26b34d7.png align="center")
+![](/blog-images/8ab27c57-e0df-46ce-9ef9-2481f26b34d7.png align="center")
 
 With this app, users can send anonymous messages to any member of the team, reply anonymously to any message, and vote up or down on messages. Inappropriate messages will automatically disappear when the majority of users downvote them. Additionally, users can post anonymous polls with up to five options, and other team members can vote anonymously as well.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1673713075534/9e27fd26-fd7e-4426-a595-0ced9b392c0a.png align="center")
+![](/blog-images/9e27fd26-fd7e-4426-a595-0ced9b392c0a.png align="center")
 
 Here's how the poll looks when posted:
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1673713108675/b59c6dd9-a5d0-4178-9269-a206e52c3589.png align="center")
+![](/blog-images/b59c6dd9-a5d0-4178-9269-a206e52c3589.png align="center")
 
 When the majority of readers downvote a message, this is what happens:
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1673713176898/0d21fb40-aa9d-43a7-a787-a192d3430dc3.png align="center")
+![](/blog-images/0d21fb40-aa9d-43a7-a787-a192d3430dc3.png align="center")
 
 **Update:** Based on the user's feedback, flagged messages can no longer be seen - That `View` button in the above screenshot - is no longer there. 😉
 

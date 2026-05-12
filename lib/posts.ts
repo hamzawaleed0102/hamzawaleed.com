@@ -30,17 +30,9 @@ const META: Record<string, { date: string; slug?: string }> = {
     date: "2023-01-14",
     slug: "anony-botter-send-anonymous-message-on-slack",
   },
-  "clcx6402q000408li0zrt5iyc.md": {
-    date: "2023-01-15",
-    slug: "combatting-burnout-in-the-software-industry",
-  },
   "cld4mpxdo02vk3pnvd5hp50mp.md": {
     date: "2023-01-20",
     slug: "building-a-slack-bot-for-fun-and-profit",
-  },
-  "cldfrsmmc000708l2hapfcdlp.md": {
-    date: "2023-01-28",
-    slug: "the-power-of-blogging",
   },
   "cldlnrxh1000309mkfkbx8rpm.md": { date: "2023-02-01", slug: "portfolio" },
   "cle18fqcb00010ajo9b2d43wn.md": {

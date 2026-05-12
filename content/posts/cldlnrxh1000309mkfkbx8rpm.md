@@ -5,7 +5,7 @@ seoDescription: "Explore my portfolio of top-notch mobile and web development pr
 datePublished: Wed Feb 01 2023 12:42:20 GMT+0000 (Coordinated Universal Time)
 cuid: cldlnrxh1000309mkfkbx8rpm
 slug: portfolio
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1675256906202/6495ecfc-cfbc-40ce-ae62-d095b9135507.png
+cover: /blog-images/6495ecfc-cfbc-40ce-ae62-d095b9135507.png
 tags: portfolio, resume, cv
 
 ---
@@ -16,7 +16,7 @@ If you're looking for a single-page PDF version of my work experience please che
 
 ## Jobcase
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1673771641134/a929f044-fae1-4e2e-b7cf-cc069310c0fb.png align="center")
+![](/blog-images/a929f044-fae1-4e2e-b7cf-cc069310c0fb.png align="center")
 
 [Jobcase](https://www.jobcase.com/about-us/) is a leading platform for blue-collar workers. Jobcase acquired upward.net, raised over $80 million and became the third-largest online jobs portal. I've developed multiple new features for Jobcase as Sr. Software Engineer at Arbisoft.
 
@@ -39,7 +39,7 @@ My achievements on this project include:
 
 ## The Bitcoin Company
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1673770874075/079563d1-b86b-4495-a0f6-e7fdefa4aa05.png align="center")
+![](/blog-images/079563d1-b86b-4495-a0f6-e7fdefa4aa05.png align="center")
 
 * Developed [**TheBitcoinCompany's**](https://thebitcoincompany.com/) app, a simple, private, and easy-to-use platform for earning, learning, spending and saving Bitcoin
     
@@ -52,7 +52,7 @@ My achievements on this project include:
 
 ## Sifir.io
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1673770942326/fc317c6b-0391-4eda-a8bc-af10b3993a0b.png align="center")
+![](/blog-images/fc317c6b-0391-4eda-a8bc-af10b3993a0b.png align="center")
 
 * Designed and coded a visually stunning, user-friendly Bitcoin **open-source** wallet ([Sifir.io](http://Sifir.io)) in React Native
     
@@ -65,9 +65,9 @@ My achievements on this project include:
 
 **Here's how it looks!**
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1673770210380/216fb230-8803-453c-8251-cbf18787286a.png?height=610 align="center")
+![](/blog-images/216fb230-8803-453c-8251-cbf18787286a.png align="center")
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1673770250792/ba0862a8-e455-48cb-bd63-73f10ee9530a.png?height=610 align="center")
+![](/blog-images/ba0862a8-e455-48cb-bd63-73f10ee9530a.png align="center")
 
 <mark>Here's my favourite animation that I developed!</mark>
 
@@ -91,4 +91,4 @@ See full details in my blog post: [Introducing Anony Botter: The Slack Bot for O
 
 **Technologies Used:** Javascript, Typescript, Jest, React Native
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1674201105067/b80467df-730b-4cb1-b1a0-d83ad674c8ac.jpeg align="center")
+![](/blog-images/b80467df-730b-4cb1-b1a0-d83ad674c8ac.jpeg align="center")
