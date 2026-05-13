@@ -506,6 +506,23 @@ h1.title .ac { color: var(--accent); }
   border: 1px solid var(--rule);
   border-radius: 999px;
 }
+.project .read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.6px;
+  text-transform: lowercase;
+  color: var(--ink-mid);
+}
+.project .read-more .arr {
+  display: inline-block;
+  transition: transform 220ms;
+}
+.project:hover .read-more { color: var(--accent); }
+.project:hover .read-more .arr { transform: translateX(4px); }
 
 /* ====== ARTICLE ====== */
 

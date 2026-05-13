@@ -92,6 +92,11 @@ export default function PortfolioPage() {
                       <div>
                         <div className="pname">{project.name}</div>
                         <p className="pdesc">{project.description}</p>
+                        {isInternal ? (
+                          <span className="read-more" aria-hidden="true">
+                            read more <span className="arr">→</span>
+                          </span>
+                        ) : null}
                       </div>
                       <div className="tags" aria-label="Technologies">
                         {project.tags.map((tag) => (
