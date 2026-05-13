@@ -10,6 +10,15 @@ export type Product = {
 export const products: Product[] = [
   {
     num: "01",
+    name: "Glance",
+    url: "https://marketplace.visualstudio.com/items?itemName=hamzawaleed.glance-claude-code",
+    blurb:
+      "A VS Code extension for juggling many Claude Code sessions at once. Each session gets a card in the sidebar — title, TL;DR, progress bar, and a yellow flag when an agent is waiting on you.",
+    year: "2026",
+    stack: "vscode · typescript · mcp",
+  },
+  {
+    num: "02",
     name: "CashFlow AI",
     url: "https://cashflow.hamzawaleed.com/",
     blurb:
@@ -18,7 +27,7 @@ export const products: Product[] = [
     stack: "react native · django · python",
   },
   {
-    num: "02",
+    num: "03",
     name: "Anony Botter",
     url: "https://anonybotter.hamzawaleed.com/",
     blurb:
