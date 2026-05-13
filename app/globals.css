@@ -362,10 +362,10 @@ h1.title .ac { color: var(--accent); }
   text-decoration: none;
   color: inherit;
   position: relative;
-  transition: padding 220ms ease;
+  transition: box-shadow 220ms ease, background-color 220ms ease;
 }
 .product:last-child { border-bottom: 1px solid var(--rule); }
-.product:hover { padding-left: 14px; }
+.product:hover { box-shadow: inset 2px 0 0 var(--accent); }
 .product .num {
   position: absolute;
   top: 56px; left: -56px;
@@ -467,9 +467,11 @@ h1.title .ac { color: var(--accent); }
   border-top: 1px solid var(--rule-soft);
   text-decoration: none;
   color: inherit;
-  transition: padding 200ms;
+  transition: box-shadow 200ms ease;
 }
-.project:hover { padding-left: 10px; }
+.project:hover { box-shadow: inset 2px 0 0 var(--accent); }
+.project .pdesc { transition: color 200ms ease; }
+.project:hover .pdesc { color: var(--ink-mid); }
 .project .pname {
   font-family: var(--serif);
   font-size: 26px;

@@ -49,7 +49,7 @@ export default function HomePage() {
             Waleed<span className="ac">.</span>
           </h1>
           <p className="bio">
-            Principal software engineer. Notes on systems, scale, and the craft underneath.
+            Sharing bits from code, life, and everything in between.
           </p>
         </section>
 
