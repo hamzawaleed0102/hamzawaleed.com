@@ -39,6 +39,21 @@ export const roles: Role[] = [
     ],
   },
   {
+    years: "'22",
+    yearsRange: { start: "2022", end: "2022" },
+    title: "Open Source Contributor",
+    company: "freeCodeCamp",
+    projects: [
+      {
+        name: "UI components TypeScript setup",
+        url: "https://www.freecodecamp.org/",
+        description:
+          "Set up TypeScript for freeCodeCamp's new UI component library — sample components, stories, and Jest config updates to support TS end-to-end.",
+        tags: ["typescript", "jest", "react native"],
+      },
+    ],
+  },
+  {
     years: "'20 — '21",
     yearsRange: { start: "2020", end: "2021" },
     title: "Freelance React Native Engineer",
@@ -57,21 +72,6 @@ export const roles: Role[] = [
         description:
           "Designed and coded an open-source Bitcoin wallet in React Native. Optimized animations with D3.js to keep the bridge lean, built privacy/anonymity options, and reworked UX for mobile-first accessibility. The owner doubled my rate twice in a week.",
         tags: ["react native", "d3.js", "open source"],
-      },
-    ],
-  },
-  {
-    years: "'22",
-    yearsRange: { start: "2022", end: "2022" },
-    title: "Open Source Contributor",
-    company: "freeCodeCamp",
-    projects: [
-      {
-        name: "UI components TypeScript setup",
-        url: "https://www.freecodecamp.org/",
-        description:
-          "Set up TypeScript for freeCodeCamp's new UI component library — sample components, stories, and Jest config updates to support TS end-to-end.",
-        tags: ["typescript", "jest", "react native"],
       },
     ],
   },
