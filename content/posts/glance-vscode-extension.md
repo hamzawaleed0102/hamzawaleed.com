@@ -117,6 +117,16 @@ With the panel focused:
 
 Double-click a card's title to rename it. The rename is sticky — Claude won't overwrite it until you `/clear` the session. Drag a card up or down to reorder the fleet, and the order persists across reloads.
 
+## Shipping six VSIXes per tag
+
+The first version of Glance was a single 16 MB `.vsix` because `node-pty` bundles native prebuilds for every supported platform — darwin-arm64, darwin-x64, linux-x64, linux-arm64, win32-x64, win32-arm64. A Mac install was shipping all six, and only one was ever going to run.
+
+A small script (`scripts/package-platforms.mjs`) moves every other-platform prebuild dir aside before `vsce package`, then puts them back in a `finally`. The Marketplace serves whichever `.vsix` matches the user's OS and arch. End result: 2.2 to 3.5 MB per install instead of 16.
+
+The release pipeline is a GitHub Actions matrix — one job per target, all triggered by pushing a `v*` tag. macOS and Windows use the prebuilds shipped in `node-pty`'s npm tarball. Linux has no prebuilt binary, so the runner compiles `node-pty` from source via `node-gyp` and the workflow moves the build output into the `prebuilds/` slot the package script expects. Each matrix job publishes its `.vsix` independently with `fail-fast: false`, so a flaky Windows-ARM runner doesn't block the macOS release. `vsce`'s "already published" error is swallowed as success so partial re-runs are idempotent.
+
+So: `git tag v0.0.X && git push --tags`, and ten minutes later it's live on every platform.
+
 ## What I learned building it
 
 A few unobvious things:
