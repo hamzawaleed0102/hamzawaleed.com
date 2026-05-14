@@ -82,6 +82,10 @@ The trick is that cards render from the last-known state immediately (it's just 
 
 Agents you spawned but never prompted are filtered out — they don't have a transcript on disk yet, so `claude --resume` would fail with "no conversation found." Only agents that actually got a first prompt are persisted.
 
+## Mix models per agent
+
+The dropdown next to **+ New Session** picks a model — Opus, Sonnet, or Haiku — for each agent. The card shows a small chip with whichever one it's running. The agent doing a quick rename can be Haiku while the one writing the migration is Opus, and you're not paying Opus prices for everything.
+
 ## Toasts you don't mind
 
 ![VS Code information toast showing an agent's name and the reason it needs you, with a Show button](/blog-images/glance-notification.png)
@@ -91,6 +95,27 @@ When a background turn finishes — meaning you're not actively looking at that 
 The toast is suppressed when you *are* already looking at the agent's terminal. No "your work is done" ping for work you're staring at.
 
 There's a short audio tone too, configurable.
+
+## Steering the fleet from the keyboard
+
+The whole point of one panel is that you steer five agents from it without reaching for the mouse.
+
+From anywhere in VS Code:
+
+- `Cmd+Shift+G` / `Ctrl+Shift+G` — focus the Glance panel. Press it again with the panel already focused and you spawn a new agent.
+- `Cmd+Alt+N` / `Ctrl+Alt+N` — new agent without leaving wherever you are.
+
+With the panel focused:
+
+- `↑` / `↓` — cycle through cards.
+- `Enter` — jump into the highlighted agent's terminal.
+- `Esc` — drop back to the panel.
+- `g` — spawn a new agent.
+- `c` `c` (press `c` twice within 400 ms) — run `/clear` on the highlighted agent.
+- `f` — toggle the bottom panel maximized; useful for full-screening one terminal.
+- `Cmd+Backspace` / `Ctrl+Backspace` — kill the highlighted agent.
+
+Double-click a card's title to rename it. The rename is sticky — Claude won't overwrite it until you `/clear` the session. Drag a card up or down to reorder the fleet, and the order persists across reloads.
 
 ## What I learned building it
 
@@ -108,5 +133,7 @@ If you spend any real time in Claude Code and have ever lost track of which term
 - Install from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=hamzawaleed.glance-claude-code), or search **Glance for Claude Code** in the Extensions panel.
 - Click the Glance icon in the activity bar, hit **+ New Session** (or `Cmd+Shift+G` / `Ctrl+Shift+G`).
 - Spawn a few more. Watch them work.
+
+A 30-second welcome tour pops up on first install to point out the activity-bar icon and the shortcuts; you can re-open it any time via **Glance: Show Welcome Tour** in the Command Palette.
 
 Source is on GitHub at [hamzawaleed0102/glancer-vscode](https://github.com/hamzawaleed0102/glancer-vscode). Issues and PRs welcome.
