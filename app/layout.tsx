@@ -5,6 +5,8 @@ import { site } from "@/lib/site";
 import { ThemeScript } from "./components/ThemeScript";
 import "./globals.css";
 
+const GA_ID = "G-GD12RF1XQV";
+
 const newsreader = Newsreader({
   subsets: ["latin"],
   display: "swap",
@@ -63,6 +65,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: site.title,
     description: site.description,
+    site: site.twitter,
     creator: site.twitter,
   },
   robots: {
@@ -77,6 +80,9 @@ export const metadata: Metadata = {
     },
   },
   category: "technology",
+  verification: {
+    google: process.env.GOOGLE_SITE_VERIFICATION,
+  },
 };
 
 const personJsonLd = {
@@ -112,6 +118,17 @@ export default function RootLayout({
       </head>
       <body>
         {children}
+        <Script
+          id="ga-loader"
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga-init" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${GA_ID}');`}
+        </Script>
         <Script
           id="ld-person"
           type="application/ld+json"

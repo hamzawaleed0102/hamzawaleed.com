@@ -11,7 +11,7 @@ export const products: Product[] = [
   {
     num: "01",
     name: "Glance",
-    url: "https://marketplace.visualstudio.com/items?itemName=hamzawaleed.glance-claude-code",
+    url: "/writing/glance-vscode-extension",
     blurb:
       "A VS Code extension for juggling many Claude Code sessions at once. Each session gets a card in the sidebar — title, TL;DR, progress bar, and a yellow flag when an agent is waiting on you.",
     year: "2026",

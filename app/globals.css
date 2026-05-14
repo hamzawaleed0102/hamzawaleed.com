@@ -457,13 +457,13 @@ h1.title .ac { color: var(--accent); }
 .role-title .ac { color: var(--accent); font-style: italic; font-weight: 400; }
 .role-title .where { color: var(--ink-mid); font-style: italic; font-weight: 400; }
 
-.projects { display: flex; flex-direction: column; gap: 0; padding-left: 180px; }
+.projects { display: flex; flex-direction: column; gap: 0; padding-left: 166px; }
 .project {
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 18px 32px;
   align-items: baseline;
-  padding: 22px 0;
+  padding: 22px 0 22px 14px;
   border-top: 1px solid var(--rule-soft);
   text-decoration: none;
   color: inherit;

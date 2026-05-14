@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Script from "next/script";
 import { Nav } from "../components/Nav";
 import { Footer } from "../components/Footer";
 import { products } from "@/lib/products";
 import { site } from "@/lib/site";
+import { defaultOgImages, defaultTwitterImages } from "@/lib/og";
 
 const pageTitle = "Products";
 const pageDescription = "Small, opinionated software I ship on the side.";
@@ -17,10 +19,13 @@ export const metadata: Metadata = {
     description: pageDescription,
     url: "/products",
     type: "website",
+    images: defaultOgImages,
   },
   twitter: {
+    card: "summary_large_image",
     title: `${pageTitle} — ${site.name}`,
     description: pageDescription,
+    images: defaultTwitterImages,
   },
 };
 
@@ -65,30 +70,53 @@ export default function ProductsPage() {
         </section>
 
         <section className="products" aria-label="Products list">
-          {products.map((p) => (
-            <a
-              key={p.num}
-              className="product"
-              href={p.url}
-              rel={p.url !== "#" ? "noopener" : undefined}
-              target={p.url !== "#" ? "_blank" : undefined}
-              aria-label={`${p.name} — visit project`}
-            >
-              <span className="num" aria-hidden="true">{p.num}</span>
-              <div>
-                <h2 className="name">{p.name}</h2>
-                <p className="blurb">{p.blurb}</p>
-                <div className="meta">
-                  <time dateTime={p.year}>{p.year}</time>
-                  <span className="sep" aria-hidden="true"></span>
-                  <span>{p.stack}</span>
+          {products.map((p) => {
+            const isInternal = p.url.startsWith("/");
+            const inner = (
+              <>
+                <span className="num" aria-hidden="true">{p.num}</span>
+                <div>
+                  <h2 className="name">{p.name}</h2>
+                  <p className="blurb">{p.blurb}</p>
+                  <div className="meta">
+                    <time dateTime={p.year}>{p.year}</time>
+                    <span className="sep" aria-hidden="true"></span>
+                    <span>{p.stack}</span>
+                  </div>
                 </div>
-              </div>
-              <span className="visit">
-                visit <span className="arr" aria-hidden="true">↗</span>
-              </span>
-            </a>
-          ))}
+                {isInternal ? (
+                  <span className="visit">
+                    read more <span className="arr" aria-hidden="true">→</span>
+                  </span>
+                ) : (
+                  <span className="visit">
+                    visit <span className="arr" aria-hidden="true">↗</span>
+                  </span>
+                )}
+              </>
+            );
+            return isInternal ? (
+              <Link
+                key={p.num}
+                className="product"
+                href={p.url}
+                aria-label={`${p.name} — read more`}
+              >
+                {inner}
+              </Link>
+            ) : (
+              <a
+                key={p.num}
+                className="product"
+                href={p.url}
+                rel={p.url !== "#" ? "noopener" : undefined}
+                target={p.url !== "#" ? "_blank" : undefined}
+                aria-label={`${p.name} — visit project`}
+              >
+                {inner}
+              </a>
+            );
+          })}
         </section>
 
         <Footer />

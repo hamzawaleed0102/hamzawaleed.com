@@ -5,6 +5,7 @@ import { Nav } from "./components/Nav";
 import { Footer } from "./components/Footer";
 import { posts } from "@/lib/posts";
 import { site } from "@/lib/site";
+import { defaultOgImages, defaultTwitterImages } from "@/lib/og";
 
 export const metadata: Metadata = {
   title: site.title,
@@ -15,10 +16,13 @@ export const metadata: Metadata = {
     description: site.description,
     url: "/",
     type: "website",
+    images: defaultOgImages,
   },
   twitter: {
+    card: "summary_large_image",
     title: site.title,
     description: site.description,
+    images: defaultTwitterImages,
   },
 };
 

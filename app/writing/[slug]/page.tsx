@@ -7,6 +7,7 @@ import { Nav } from "../../components/Nav";
 import { Footer } from "../../components/Footer";
 import { allPosts, getPostBySlug } from "@/lib/posts";
 import { site } from "@/lib/site";
+import { defaultOgImages, defaultTwitterImages } from "@/lib/og";
 
 type PageProps = { params: Promise<{ slug: string }> };
 
@@ -36,13 +37,13 @@ export async function generateMetadata(
       publishedTime: new Date(post.date).toISOString(),
       authors: [site.name],
       tags: post.tags,
-      images: post.cover ? [{ url: post.cover }] : undefined,
+      images: post.cover ? [{ url: post.cover }] : defaultOgImages,
     },
     twitter: {
       card: "summary_large_image",
       title: post.title,
       description,
-      images: post.cover ? [post.cover] : undefined,
+      images: post.cover ? [post.cover] : defaultTwitterImages,
     },
   };
 }

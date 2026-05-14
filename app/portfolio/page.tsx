@@ -5,6 +5,7 @@ import { Nav } from "../components/Nav";
 import { Footer } from "../components/Footer";
 import { roles } from "@/lib/portfolio";
 import { site } from "@/lib/site";
+import { defaultOgImages, defaultTwitterImages } from "@/lib/og";
 
 const pageTitle = "Portfolio";
 const pageDescription = "Projects I've shipped across companies, ordered by recent.";
@@ -18,10 +19,13 @@ export const metadata: Metadata = {
     description: pageDescription,
     url: "/portfolio",
     type: "profile",
+    images: defaultOgImages,
   },
   twitter: {
+    card: "summary_large_image",
     title: `${pageTitle} — ${site.name}`,
     description: pageDescription,
+    images: defaultTwitterImages,
   },
 };
 

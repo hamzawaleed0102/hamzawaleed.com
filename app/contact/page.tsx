@@ -3,6 +3,7 @@ import Script from "next/script";
 import { Nav } from "../components/Nav";
 import { Footer } from "../components/Footer";
 import { site } from "@/lib/site";
+import { defaultOgImages, defaultTwitterImages } from "@/lib/og";
 
 const pageTitle = "Contact";
 const pageDescription = "Reach me through any of these channels.";
@@ -16,10 +17,13 @@ export const metadata: Metadata = {
     description: pageDescription,
     url: "/contact",
     type: "profile",
+    images: defaultOgImages,
   },
   twitter: {
+    card: "summary_large_image",
     title: `${pageTitle} — ${site.name}`,
     description: pageDescription,
+    images: defaultTwitterImages,
   },
 };
 
