@@ -143,6 +143,10 @@ A few unobvious things:
 
 Glance ships often. Newest changes first.
 
+### May 21, 2026 — v0.0.27
+
+- **The session name follows its card title.** When Claude assigns or updates a session's title, Glance now sends `/rename <title>` into that terminal, so the session and the card it lives on share one name. Glance waits for an empty input box first — if you're part-way through typing a message, the rename holds until you've sent or cleared it, so it never lands on top of half-finished text.
+
 ### May 21, 2026 — v0.0.26
 
 - **Plain shell terminals.** Press `t` with the panel focused and Glance drops an ordinary shell terminal into the fleet as its own card — no Claude attached. It's for the `git status` / `npm run build` side-quests you don't want to spend an agent on. The card names itself after the first command you run, and a cyan tab marker sets it apart from the green Claude cards.
