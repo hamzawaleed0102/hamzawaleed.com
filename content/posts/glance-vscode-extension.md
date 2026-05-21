@@ -20,7 +20,7 @@ It's free, MIT-licensed, and on the Marketplace as [hamzawaleed.glance-claude-co
 
 ## The problem I actually had
 
-The real pain wasn't running multiple sessions — that part Claude Code handles fine. The pain was *knowing which one to look at*. Terminal tabs are silent. They don't tell you "this one finished" or "this one is asking for permission." So I'd get pulled into one session, lose context on the other four, and come back to find two of them had been idle for ten minutes.
+The real pain wasn't running multiple sessions — that part Claude Code handles fine. The pain was _knowing which one to look at_. Terminal tabs are silent. They don't tell you "this one finished" or "this one is asking for permission." So I'd get pulled into one session, lose context on the other four, and come back to find two of them had been idle for ten minutes.
 
 I tried scripting around it — checking transcript files, scraping shell output, parsing emoji markers I'd had Claude print into the terminal. Everything I built was brittle. Terminals lie. Buffers wrap. ANSI escapes get in the way.
 
@@ -32,8 +32,8 @@ The version that actually works does something different.
 
 Every card carries five fields:
 
-- **Title** — a 2–4 word label. The agent claims one on its first turn; you can double-click to rename it and the rename sticks.
-- **TL;DR** — one short sentence describing the latest outcome. *"Refactored the auth flow."* *"Waiting on the migration to finish."*
+- **Title** — a 2–4 word label. The agent claims one on its first turn; you can rename it — press `r` or double-click — and the rename sticks.
+- **TL;DR** — one short sentence describing the latest outcome. _"Refactored the auth flow."_ _"Waiting on the migration to finish."_
 - **Progress** — a bar with a label, for multi-step work. Hidden on trivial turns.
 - **Needs input** — when set, the card lights yellow.
 - **Error** — when set, the card lights red.
@@ -92,7 +92,7 @@ The dropdown next to **+ New Session** picks a model — Opus, Sonnet, or Haiku 
 
 When a background turn finishes — meaning you're not actively looking at that agent's terminal — Glance fires a native VS Code toast. The toast carries the agent's name and the latest TL;DR or needs-input reason. A **Show** button on the toast jumps you straight to that terminal.
 
-The toast is suppressed when you *are* already looking at the agent's terminal. No "your work is done" ping for work you're staring at.
+The toast is suppressed when you _are_ already looking at the agent's terminal. No "your work is done" ping for work you're staring at.
 
 There's a short audio tone too, configurable.
 
@@ -105,17 +105,20 @@ From anywhere in VS Code:
 - `Cmd+Shift+G` / `Ctrl+Shift+G` — focus the Glance panel. Press it again with the panel already focused and you spawn a new agent.
 - `Cmd+Alt+N` / `Ctrl+Alt+N` — new agent without leaving wherever you are.
 
-With the panel focused:
+With the panel focused: `Cmd+Shift+G`
 
 - `↑` / `↓` — cycle through cards.
 - `Enter` — jump into the highlighted agent's terminal.
 - `Esc` — drop back to the panel.
 - `g` — spawn a new agent.
+- `t` — spawn a plain shell terminal (no Claude attached).
+- `r` — rename the highlighted card.
 - `c` `c` (press `c` twice within 400 ms) — run `/clear` on the highlighted agent.
+- `p` `p` — pin or unpin the highlighted card.
 - `f` — toggle the bottom panel maximized; useful for full-screening one terminal.
 - `Cmd+Backspace` / `Ctrl+Backspace` — kill the highlighted agent.
 
-Double-click a card's title to rename it. The rename is sticky — Claude won't overwrite it until you `/clear` the session. Drag a card up or down to reorder the fleet, and the order persists across reloads.
+Rename a card by pressing `r` — the name opens pre-selected, so you type over it and hit `Enter` — or by double-clicking its title. The rename is sticky either way: Claude won't overwrite it until you `/clear` the session. Drag a card up or down to reorder the fleet, and the order persists across reloads.
 
 ## Shipping six VSIXes per tag
 
@@ -135,6 +138,15 @@ A few unobvious things:
 - **Streaming flags are tricky.** Claude's idle "Notification" hook fires after ~60s of silence — same hook that fires when it's blocked on a permission. I had to gate the "needs attention" flag on whether a stream was active, otherwise every idle agent slowly turned yellow.
 - **`node-pty` won't bundle.** The native binding has to stay external in esbuild, and the spawn-helper needs `chmod +x` after `pnpm install` because npm tarballs strip the executable bit. Without that, VS Code's hardened runtime refuses to `posix_spawnp` it.
 - **State-file polling beats native fs events on macOS sometimes.** Chokidar in polling mode (250ms) ended up more reliable than fsevents for the small JSON writes the MCP server does.
+
+## What's new
+
+Glance ships often. Newest changes first.
+
+### May 21, 2026 — v0.0.26
+
+- **Plain shell terminals.** Press `t` with the panel focused and Glance drops an ordinary shell terminal into the fleet as its own card — no Claude attached. It's for the `git status` / `npm run build` side-quests you don't want to spend an agent on. The card names itself after the first command you run, and a cyan tab marker sets it apart from the green Claude cards.
+- **Rename from the keyboard.** Press `r` on a highlighted card to rename it without reaching for the mouse. The title opens with the whole name selected, so you type straight over it and press `Enter` to save — `Esc` cancels.
 
 ## Try it
 
