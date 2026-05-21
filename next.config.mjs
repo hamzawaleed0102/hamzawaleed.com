@@ -9,6 +9,18 @@ const nextConfig = {
   poweredByHeader: false,
   compress: true,
   outputFileTracingRoot: __dirname,
+  async headers() {
+    return [
+      {
+        // Build artifacts (JS/CSS/font chunks) are not pages. Tell Google not
+        // to index them so they leave the "Crawled - currently not indexed"
+        // report. noindex only affects indexing — Google still fetches these
+        // for rendering, so layout/content is unaffected.
+        source: "/_next/static/:path*",
+        headers: [{ key: "X-Robots-Tag", value: "noindex" }],
+      },
+    ];
+  },
   async redirects() {
     return [
       {
