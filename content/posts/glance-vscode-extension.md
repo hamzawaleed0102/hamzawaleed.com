@@ -143,6 +143,10 @@ A few unobvious things:
 
 Glance ships often. Newest changes first.
 
+### May 22, 2026 — v0.0.28
+
+- **The session rename is instant now.** The `/rename` that keeps a session's name in step with its card no longer waits for Claude to finish the turn — it fires the moment Claude assigns the title. If you happen to be part-way through typing a message when that happens, Glance still holds the rename back until you've sent it, so it never disrupts what you're writing.
+
 ### May 21, 2026 — v0.0.27
 
 - **The session name follows its card title.** When Claude assigns or updates a session's title, Glance now sends `/rename <title>` into that terminal, so the session and the card it lives on share one name. Glance waits for an empty input box first — if you're part-way through typing a message, the rename holds until you've sent or cleared it, so it never lands on top of half-finished text.
