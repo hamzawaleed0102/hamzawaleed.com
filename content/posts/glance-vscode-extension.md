@@ -42,33 +42,33 @@ No log scraping. No regex over emoji. The agent itself reports its state — and
 
 ## The trick: Claude updates its own card
 
-Glance ships a tiny MCP server that exposes one tool: `update_state`. The extension launches Claude with `--mcp-config` pointing at this server, plus a system prompt that says, in roughly these words:
+Glance runs a tiny MCP server — hosted right inside the extension — that exposes one tool: `update_state`. The extension launches Claude with `--mcp-config` pointing at it, plus a system prompt that says, in roughly these words:
 
 > After EVERY response — short, long, trivial, planning, mid-tool-chain — your LAST action MUST be a call to `update_state`, with ALL FIVE fields populated.
 
-Claude follows the instruction. The tool writes a small JSON payload to a per-agent state file on disk. A `chokidar` watcher in the extension picks up the file change, diffs against the last known state, and pushes a partial update to the React webview. The card re-renders.
+Claude follows the instruction. The call lands in the MCP server the extension hosts in-process — Claude reaches it over a localhost-only HTTP connection — so the `update_state` payload arrives straight in the extension, which diffs it against the last known state and pushes a partial update to the React webview. The card re-renders.
 
 That's the whole pipeline:
 
 ```
 Claude tool call
-  → MCP server writes JSON to state/<agentId>.json
-  → chokidar watcher fires
+  → POST to the extension's in-process HTTP server (127.0.0.1)
   → extension diffs and posts agentUpdate to the webview
   → card re-renders
 ```
 
 I tried the obvious alternative first — `--append-system-prompt` — but the shell echoed the prompt into the visible terminal on launch, which was awful. Returning the instruction in the MCP server's `initialize` response keeps it invisible.
 
-## Three runtimes per agent
+## Two runtimes per agent
 
-Behind every card, three things are running:
+Behind every card, two processes are running:
 
-1. **The extension host.** Owns the agent list, the global hook watcher, and the on-disk persistence. Spawns each Claude session.
+1. **The extension host.** Owns the agent list, the persistence, and a small HTTP server bound to localhost. Spawns each Claude session.
 2. **The Claude process.** Runs in a `node-pty` child shell, wrapped in a `vscode.Pseudoterminal` so VS Code owns the scrollback. From the user's perspective, it's a normal terminal — you type, Claude responds, history scrolls.
-3. **The MCP server.** A small Node script bundled with the extension, the only path Claude uses to mutate the card.
 
-Hook events flow on a separate channel. `Stop`, `UserPromptSubmit`, `Notification`, and `SessionStart` are wired to a short Node script that drops JSON files into a watched directory. The extension reads those to know when a turn started, when it finished, when you `/clear`'d the session, when you `/compact`'d it.
+There's no third process. The MCP server Claude calls to mutate the card is hosted by the extension host itself — registered as an `http`-type MCP server, so Claude connects straight to it. Earlier versions spawned the MCP server as a separate child and bridged its output back through files on disk; folding it in-process removed a process, the files, and a class of lost-event bugs.
+
+Hook events ride the same HTTP server on a separate route. `Stop`, `UserPromptSubmit`, `Notification`, `SessionStart`, and — for subagents — `PreToolUse` and `PostToolUse` are wired to a short Node script that POSTs each event to the extension. That's how Glance knows when a turn started, when it finished, when you `/clear`'d the session, and which subagents an agent is running.
 
 The activity-bar badge — the little count that says "two of your agents need you" — is a derived count of `agents.where(needsInput || error)`. It recomputes on every update, never tracked incrementally, so it can't drift.
 
@@ -137,11 +137,16 @@ A few unobvious things:
 - **Tool-output as a UI channel is underrated.** The MCP server returns a one-line "Agent card updated." string on every call, which is what Claude sees. Returning nothing makes Claude paranoid that the call failed and call again. Returning too much wastes tokens. One short confirmation is the sweet spot.
 - **Streaming flags are tricky.** Claude's idle "Notification" hook fires after ~60s of silence — same hook that fires when it's blocked on a permission. I had to gate the "needs attention" flag on whether a stream was active, otherwise every idle agent slowly turned yellow.
 - **`node-pty` won't bundle.** The native binding has to stay external in esbuild, and the spawn-helper needs `chmod +x` after `pnpm install` because npm tarballs strip the executable bit. Without that, VS Code's hardened runtime refuses to `posix_spawnp` it.
-- **State-file polling beats native fs events on macOS sometimes.** Chokidar in polling mode (250ms) ended up more reliable than fsevents for the small JSON writes the MCP server does.
+- **An MCP tool call can't reach the extension directly — they're separate processes.** The first version bridged the gap with files on disk and a watcher; a dropped file event could leave a card frozen mid-turn. The fix that stuck was making the extension *be* the MCP server, reached over a localhost HTTP connection — no files, nothing to miss.
 
 ## What's new
 
 Glance ships often. Newest changes first.
+
+### May 22, 2026 — v0.0.30
+
+- **Cards show their background subagents.** When an agent fans work out to subagents — Claude's `Agent` tool — each subagent now gets its own row on the card: a short task label and a live dot that turns into a check when it finishes. You can watch three of them spin up in parallel, complete one by one, and clear when the parent turn ends — without opening the terminal to find out.
+- **The card pipeline was rebuilt, and a stuck-card bug went with it.** State and hook events now travel straight into the extension over a localhost connection instead of through files on disk. It's mostly an internals change, but it killed a real bug: a card could previously get stuck showing a finished turn while the agent was still working, because a dropped file event went unnoticed. That can't happen now.
 
 ### May 22, 2026 — v0.0.28
 
