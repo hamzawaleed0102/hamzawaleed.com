@@ -84,7 +84,7 @@ Agents you spawned but never prompted are filtered out — they don't have a tra
 
 ## Mix models per agent
 
-The dropdown next to **+ New Session** picks a model — Opus, Sonnet, or Haiku — for each agent. The card shows a small chip with whichever one it's running. The agent doing a quick rename can be Haiku while the one writing the migration is Opus, and you're not paying Opus prices for everything.
+The model dropdown — the chevron beside the **+** in the panel header — picks a model — Opus, Sonnet, or Haiku — for each agent. The card shows a small chip with whichever one it's running. The agent doing a quick rename can be Haiku while the one writing the migration is Opus, and you're not paying Opus prices for everything.
 
 ## Toasts you don't mind
 
@@ -143,6 +143,13 @@ A few unobvious things:
 
 Glance ships often. Newest changes first.
 
+### May 23, 2026 — v0.0.31
+
+- **A card now tells you whether you're inside its terminal.** Selecting a card and actually working in its terminal used to look identical. Now the active card has two distinct states: a blue outline when it's just selected in the panel — press `Enter` to drop into it — and a brighter, solid treatment once you're typing in its terminal. One glance tells you which mode you're in.
+- **The model picker moved up to the panel header.** The big "+ New Session" button at the bottom of the panel is gone. A new session is the `+` in the header now, and the model dropdown — Opus, Sonnet, Haiku — is the chevron right beside it. The panel also draws a faint border while it holds keyboard focus, so you can tell when it's listening for shortcuts.
+- **Deleting a card is smooth again.** Removing a card used to make the remaining cards jerk as they slid up to close the gap, and the next few arrow-key moves jittered along with them. The reorder animation now measures card positions correctly even mid-slide, so a delete — and everything right after it — stays smooth.
+- **Smaller touches.** A session is now renamed only once per conversation rather than on every title change, and the turn-complete sound is a real notification tone instead of a synthesized beep.
+
 ### May 22, 2026 — v0.0.30
 
 - **Cards show their background subagents.** When an agent fans work out to subagents — Claude's `Agent` tool — each subagent now gets its own row on the card: a short task label and a live dot that turns into a check when it finishes. You can watch three of them spin up in parallel, complete one by one, and clear when the parent turn ends — without opening the terminal to find out.
@@ -166,7 +173,7 @@ Glance ships often. Newest changes first.
 If you spend any real time in Claude Code and have ever lost track of which terminal was doing what:
 
 - Install from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=hamzawaleed.glance-claude-code), or search **Glance for Claude Code** in the Extensions panel.
-- Click the Glance icon in the activity bar, hit **+ New Session** (or `Cmd+Shift+G` / `Ctrl+Shift+G`).
+- Click the Glance icon in the activity bar, hit the **+** in the panel header (or `Cmd+Shift+G` / `Ctrl+Shift+G`).
 - Spawn a few more. Watch them work.
 
 A 30-second welcome tour pops up on first install to point out the activity-bar icon and the shortcuts; you can re-open it any time via **Glance: Show Welcome Tour** in the Command Palette.
