@@ -143,6 +143,11 @@ A few unobvious things:
 
 Glance ships often. Newest changes first.
 
+### May 26, 2026 — v0.0.32
+
+- **No more "Acknowledged — task done." replies at the end of a turn.** Glance injects a short reminder into every prompt to make sure the agent updates its card; some sessions had started parroting that reminder back as a closing line ("Acknowledged — single-step task, no list needed. Done."). The system prompt now explicitly forbids those closing acks and tells the agent to treat the reminder as silent plumbing. The card still updates; you just get the real answer without the extra sentence.
+- **The `c c` clear shortcut works mid-turn.** Pressing `c c` on a focused card used to send `/clear` as-is, which sat in the input box behind whatever the agent was already doing — or behind anything you'd half-typed. It now sends `Esc` + `Ctrl+U` + `/clear` so it interrupts the in-flight turn and wipes a dirty input box first, then clears cleanly.
+
 ### May 23, 2026 — v0.0.31
 
 - **A card now tells you whether you're inside its terminal.** Selecting a card and actually working in its terminal used to look identical. Now the active card has two distinct states: a blue outline when it's just selected in the panel — press `Enter` to drop into it — and a brighter, solid treatment once you're typing in its terminal. One glance tells you which mode you're in.
