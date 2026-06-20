@@ -143,6 +143,10 @@ A few unobvious things:
 
 Glance ships often. Newest changes first.
 
+### June 20, 2026 — v0.0.33
+
+- **A session really does keep its title now.** The "rename once per conversation" change in v0.0.31 only governed the `/rename` echo into the terminal — the card and terminal-tab title could still flip mid-conversation whenever the agent reported a different title. Now the title is claimed once, at the start, and locked for the rest of the conversation; `/clear` (or `/compact`) resets it so the next conversation can re-title cleanly. No more cards quietly renaming themselves halfway through a turn.
+
 ### May 26, 2026 — v0.0.32
 
 - **No more "Acknowledged — task done." replies at the end of a turn.** Glance injects a short reminder into every prompt to make sure the agent updates its card; some sessions had started parroting that reminder back as a closing line ("Acknowledged — single-step task, no list needed. Done."). The system prompt now explicitly forbids those closing acks and tells the agent to treat the reminder as silent plumbing. The card still updates; you just get the real answer without the extra sentence.
