@@ -143,6 +143,10 @@ A few unobvious things:
 
 Glance ships often. Newest changes first.
 
+### July 6, 2026 — v0.0.34
+
+- **Glance now costs your sessions about half as many tokens.** Every Claude session attached to Glance carries some standing context — the card-update instructions served over MCP, the `update_state` tool schema, and a small nudge on every prompt. All three have been rewritten in a compressed, telegraphic style: same rules, same behavior, roughly 1,800 fewer tokens per conversation. That's context window handed back to your actual work.
+
 ### June 20, 2026 — v0.0.33
 
 - **A session really does keep its title now.** The "rename once per conversation" change in v0.0.31 only governed the `/rename` echo into the terminal — the card and terminal-tab title could still flip mid-conversation whenever the agent reported a different title. Now the title is claimed once, at the start, and locked for the rest of the conversation; `/clear` (or `/compact`) resets it so the next conversation can re-title cleanly. No more cards quietly renaming themselves halfway through a turn.
